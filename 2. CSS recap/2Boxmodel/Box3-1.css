@@ -1,0 +1,11 @@
+p {
+    background-color: green;
+    border: solid 1px;
+}
+
+span {
+    background-color: white;
+    border:solid 1px;
+    width:50em;
+    height:50em;
+}
