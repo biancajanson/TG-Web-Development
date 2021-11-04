@@ -9,5 +9,13 @@
 <body>
     <h1>Opdracht 8</h1>
     <h2>Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te leggen.</h2>
+    <div>
+        <h3>Cascade</h3>
+        <p>Bij cascade gaat het erom dat er conflicterende CSS properties zijn. Cascade geeft dan aan welke eigenschappen wel en welke niet aan een element toegewezen worden. Zie hier een <a href="/2. CSS recap/1Selectors/Selectors8-1.html">voorbeeld</a>.</p>
+        <p>In dit geval heb ik 2 keer een CSS propertie gegeven aan de p elementen, namelijk als eerste de kleur rood, en als tweede de kleur blauw. Door de cascade wordt altijd de laatste regel de uiteindelijke eigenschappen die mee gegeven worden. In dit geval wordt de eigenschap rood dus overgeschreven door de eigenschap blauw omdat deze lager in het CSS bestand staat.</p>
+        <h3>Inheritance</h3>
+        <p>Inheritance houdt in dat sommige CSS eigenschappen die zijn ingesteld op de bovenliggende elementen, de parent, wel overgenomen wordt door de child elementen, en andere niet. Zie hier een <a href="/2. CSS recap/1Selectors/Selectors8-2.html">voorbeeld</a>.</p>
+        <p>In dit geval heb ik het div element een eigenschap gegeven, namelijk de kleur rood. Omdat ik het laatste p element een id heb gegeven, wordt alleen bij dit element de eigenschap van de div niet overgenomen, maar behoudt dit element zijn eigen eigenschap.</p>
+    </div>
 </body>
 </html>
