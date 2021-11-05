@@ -1,0 +1,19 @@
+img {
+    position:absolute;
+}
+
+div {
+    position:relative;
+    top:80px;
+}
+
+h1 {
+    background-color: yellow;
+    width:800px;
+    text-align:left;
+}
+
+p {
+    background-color: white;
+    width:200px;
+}

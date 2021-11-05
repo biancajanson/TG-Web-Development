@@ -1,0 +1,17 @@
+span {
+    color:white;
+}
+
+p {
+    color:yellow;
+}
+
+img {
+    position:absolute;
+}
+
+div {
+    position:relative;
+    text-align:center;
+    top:50px;
+}
