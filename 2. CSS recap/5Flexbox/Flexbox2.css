@@ -1,0 +1,14 @@
+p {
+    background-color:lightgreen;
+    padding: 70px;
+}
+
+.container {
+    background-color: yellow;
+    display:flex;
+    flex-direction:row;
+    padding:80px;
+    justify-content: flex-end;
+    gap:20px;
+}
+
