@@ -2,9 +2,8 @@
     border: 1px solid;
 }
 
-.vierkant {
-    margin-left: 5px;
-    border:1px solid;
+.vierkant1 {
+    border: 1px solid;
     width: 35px;
     height: 35px;
     text-align: center;
@@ -12,17 +11,66 @@
 
 .container:hover .vierkant1 {
     background-color: red;
-    border-radius: 50px;
+    border-radius: 20px;
     transition-duration: 4s;
-    
+    margin-left: 1480px;
+    transition-timing-function: ease-out;
+}
+
+.vierkant2 {
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    text-align: center;
 }
 
 .container:hover .vierkant2 {
     background-color: red;
-    border-radius: 20px;
+    border-radius: 10px;
+    transition-duration: 6s;
+    margin-left: 1480px;
+    transition-timing-function: ease-in;
 }
-/* .container:hover .vierkant {
+
+.vierkant3 {
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.container:hover .vierkant3 {
     background-color: red;
-    color:white;
-    margin-left:650px;
-} */
+    transition-duration: 5s;
+    margin-left: 1480px;
+    transition-timing-function: ease-out;
+}
+
+.vierkant4 {
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.container:hover .vierkant4 {
+    background-color: red;
+    transition-duration: 5s;
+    margin-left: 1480px;
+    transition-timing-function: ease-in;
+}
+
+.vierkant5 {
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    transition-timing-function: cubic-bezier(0.5, 1, 0.1, -0.68);
+    
+}
+.container:hover .vierkant5 {
+    background-color: red;
+    transition-duration: 6s;
+    margin-left: 1480px;
+    
+}
