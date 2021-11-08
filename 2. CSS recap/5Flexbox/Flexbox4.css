@@ -3,12 +3,61 @@ p {
     padding: 70px;
 }
 
-.container {
+.container1 {
     background-color: yellow;
     display:flex;
     flex-direction:row;
     padding:80px;
     justify-content: flex-start;
     gap:20px;
+    margin-bottom:10px;
 }
 
+.container2 {
+    background-color: yellow;
+    display:flex;
+    flex-direction:row;
+    padding:80px;
+    justify-content: flex-end;
+    gap:20px;
+    margin-bottom:10px;
+}
+
+.container3 {
+    background-color: yellow;
+    display:flex;
+    flex-direction:row;
+    padding:80px;
+    justify-content: center;
+    gap:20px;
+    margin-bottom:10px;
+}
+
+.container4 {
+    background-color: yellow;
+    display:flex;
+    flex-direction:row;
+    padding:80px;
+    justify-content: space-between;
+    gap:20px;
+    margin-bottom:10px;
+}
+
+.container5 {
+    background-color: yellow;
+    display:flex;
+    flex-direction:row;
+    padding:80px;
+    justify-content: space-around;
+    gap:20px;
+    margin-bottom:10px;
+}
+.container6 {
+    background-color: yellow;
+    display:flex;
+    flex-direction:row;
+    padding:80px;
+    justify-content: space-evenly;
+    gap:20px;
+    margin-bottom:10px;
+}
