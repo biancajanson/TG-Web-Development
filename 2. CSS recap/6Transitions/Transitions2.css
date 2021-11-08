@@ -1,0 +1,9 @@
+div {
+    color:black;
+}
+
+div:hover {
+    color:red;
+    transition-property: color;
+    transition-duration: 2s;
+}

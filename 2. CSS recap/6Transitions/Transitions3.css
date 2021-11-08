@@ -1,0 +1,28 @@
+.container {
+    border: 1px solid;
+}
+
+.vierkant {
+    margin-left: 5px;
+    border:1px solid;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.container:hover .vierkant1 {
+    background-color: red;
+    border-radius: 50px;
+    transition-duration: 4s;
+    
+}
+
+.container:hover .vierkant2 {
+    background-color: red;
+    border-radius: 20px;
+}
+/* .container:hover .vierkant {
+    background-color: red;
+    color:white;
+    margin-left:650px;
+} */
