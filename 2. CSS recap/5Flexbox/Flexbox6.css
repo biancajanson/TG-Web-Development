@@ -1,0 +1,16 @@
+.container1 {
+    display:flex;
+    height: 35em;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
+    padding: .5em;
+}
+
+.container1 > div {
+    margin: .3em;
+    padding: 1.5em;
+    align-self: stretch;
+    background-color: lightskyblue;
+}
