@@ -3,12 +3,3 @@ p {
     background-color:turquoise;
     text-align:center;
 }
-
-p ::before {
-
-}
-
-p ::after {
-
-
-}
