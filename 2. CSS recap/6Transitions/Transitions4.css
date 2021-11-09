@@ -1,0 +1,52 @@
+.container {
+    border: 1px solid;
+    width: 1000px;
+    height: 300px;
+}
+
+.vierkant1 {
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin:auto;
+}
+
+.container:hover .vierkant1 {
+    transition-duration: 5s;
+    margin-left: 965px;
+    transition-timing-function: ease-out;
+}
+
+.vierkant2 {
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin:auto;
+}
+
+.container:hover .vierkant2 {
+    background-color: red;
+    border-radius: 10px;
+    transition-duration: 6s;
+    margin-left: 1480px;
+    transition-timing-function: ease-in;
+}
+
+.vierkant3 {
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin:auto;
+}
+
+.container:hover .vierkant3 {
+    background-color: red;
+    transition-duration: 5s;
+    margin-left: 1480px;
+    transition-timing-function: ease-out;
+}
+
+
