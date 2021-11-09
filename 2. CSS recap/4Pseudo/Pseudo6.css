@@ -1,11 +1,55 @@
 .cirkel1 {
     display: block;
-    border-radius:50px;
+    border-radius:160px;
     background-color: black;
     color:white;
-    font-size:30px;
+    font-size:50px;
     text-align:center;
-    width:100px;    
-    height:100px;
-    margin-top:30px;
+    width:160px;    
+    height:128px;
+    margin:64px; auto;
+    margin-top:80px;
+    position:relative;
+    justify-content: center;
+    padding-top: 90px;
+    padding-left:32px;
+    padding-right:32px;
+}
+
+.cirkelklein::before,
+.cirkelklein::after {
+    content:'';
+    background-color: black;
+    display: inline-block;
+    width:60px;
+    height:60px;
+    border-radius:3em;
+    position:absolute;
+}
+
+.cirkelklein::before {
+    left:-15%;
+}
+
+.cirkelklein::after {
+    right:-15%;
+}
+
+.stip::before,
+.stip::after {
+    content: '.';
+    color: white;
+    display: inline-block;
+    position: absolute;
+    z-index:1;
+}
+
+.stip::before {
+    left:0;
+    top:65px;
+}
+
+.stip::after {
+    right:0;
+    bottom:65px;
 }
