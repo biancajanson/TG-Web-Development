@@ -1,5 +1,53 @@
-p {
+* {
+    box-sizing: border-box;
+}
+
+
+.button {
     color:white;
+    font-size:20px;
     background-color:turquoise;
     text-align:center;
+    width:500px;
+    margin: 20vh auto;
+    position: relative;
+}
+
+.text::before,
+.text::after {
+    content: '';
+    background-color: red;
+    display: inline-block;
+    width:1%;
+    height:100%;
+    z-index:1;
+    position: absolute;
+}
+.text::before {
+    left:0;
+}
+
+.text::after {
+    right:0;
+}
+
+.text2::before,
+.text2::after {
+    content: '';
+    background-color:red;
+    display:inline-block;
+    width: 8%;
+    height: 20%;
+    z-index:2;
+    position:absolute;
+}
+
+.text2::before {
+    left:0;
+    top:0;
+}
+
+.text2::after {
+    right: 0;
+    bottom:0;
 }
