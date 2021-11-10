@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=4Mixin-2.css.map */
+.colorChangingSquare {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.colorChangingSquare:hover {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+/*# sourceMappingURL=4Mixin-2.css.map */

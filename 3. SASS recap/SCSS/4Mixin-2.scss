@@ -1,0 +1,14 @@
+@mixin important-text ($background-color) {
+    background-color:$background-color;
+    width: 100px;
+    height: 100px;
+}
+
+.colorChangingSquare {
+    @include important-text(blue);
+}
+
+.colorChangingSquare:hover {
+    @include important-text(red);
+    transition-duration: 2s;
+}
