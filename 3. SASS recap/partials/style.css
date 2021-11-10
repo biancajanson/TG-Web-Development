@@ -1,0 +1,10 @@
+.button {
+  background-color: purple;
+  color: pink;
+}
+
+.button:hover {
+  background-color: red;
+  color: yellow;
+}
+/*# sourceMappingURL=style.css.map */
