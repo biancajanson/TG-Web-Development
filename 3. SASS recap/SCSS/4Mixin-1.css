@@ -1,0 +1,10 @@
+.button {
+  background-color: lightcoral;
+  color: purple;
+}
+
+.button:hover {
+  background-color: lightgreen;
+  color: blue;
+}
+/*# sourceMappingURL=4Mixin-1.css.map */

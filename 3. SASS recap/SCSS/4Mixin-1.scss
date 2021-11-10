@@ -1,0 +1,18 @@
+@mixin important-text {
+    background-color: lightcoral;
+    color: purple;
+    
+}
+
+@mixin important-text2 {
+    background-color: lightgreen;
+    color:blue;
+}
+
+.button {
+    @include important-text();
+}
+
+.button:hover {
+    @include important-text2();
+}
