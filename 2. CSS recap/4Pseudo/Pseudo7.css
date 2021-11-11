@@ -1,0 +1,30 @@
+.vierkant {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin:auto;
+    margin-top: 200px;
+    position: relative;
+}
+
+.first::before {
+    content:'';
+    background-color:red;
+    display:inline-block;
+    width:300px;
+    height:300px;    
+    left:0;
+    transform:rotate(20deg);
+    position:absolute;
+}
+
+.second::before {
+    content:'';
+    background-color: red;
+    display:inline-block;
+    width:300px;
+    height:300px;
+    top:0;
+    transform:rotate(65deg);
+    position:absolute;
+}
