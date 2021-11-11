@@ -1,0 +1,41 @@
+.container {
+    border: 1px solid;
+    width: 500px;
+    height: 270px;
+    position:relative;
+}
+
+.smile {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+
+.container2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top:5px;
+    left:5px;
+    background-color: pink;
+    transition-duration: 3s;
+}
+
+.container:hover .container2 {
+    transform: rotate(300deg);
+    top:150px;
+    left: 100px;
+}
+
+.salmon {
+    position:absolute;
+    border: 5px solid;
+    width: 100px;
+    height: 100px;
+}
+.container:hover .salmon {
+    background-color: salmon;
+    opacity: 0.5;
+    transition-delay: 3s;
+}
