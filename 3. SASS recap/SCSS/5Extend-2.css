@@ -1,0 +1,19 @@
+.foto {
+  width: 250px;
+  height: 250px;
+}
+
+@media screen and (max-width: 320px) {
+  .foto {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foto {
+    width: 300px;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=5Extend-2.css.map */
