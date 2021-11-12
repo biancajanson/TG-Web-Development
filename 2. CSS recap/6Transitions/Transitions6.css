@@ -19,38 +19,56 @@
 .kaart1 {
     left: 0px;
     z-index: -4;
+    transition-duration: 0.5s;
 }
-
 .kaart1:hover {
-    top: -10px;
-    z-index: 1;
+    top: -20px;
+    z-index:1;
+}
+.kaart1:hover ~ .hover1{
+    color:red;
+    margin-left:75px;
 }
 
 .kaart2 {
     left: 75px;
     z-index: -3;
+    transition-duration: 0.5s;
 }
 
 .kaart2:hover {
-    top: -10px;
+    top: -20px;
     z-index: 1;
+}
+
+.kaart2:hover ~ .hover2{
+    color:red;
+    margin-left:75px;
 }
 .kaart3 {
     left: 150px;
     z-index: -2;
+    transition-duration: 0.5s;
 }
 
 .kaart3:hover {
-    top: -10px;
+    top: -20px;
     z-index: 1;
+}
+
+.kaart3:hover ~ .hover3{
+    color:red;
+    margin-left:75px;
+
 }
 
 .kaart4 {
     left: 225px;
     z-index: -1;
+    transition-duration: 0.5s;
 }
 
 .kaart4:hover {
-    top: -10px;
+    top: -20px;
     z-index: 1;
 }
