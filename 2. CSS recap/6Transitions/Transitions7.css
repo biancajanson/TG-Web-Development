@@ -1,0 +1,86 @@
+.container {
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    z-index:1;
+}
+
+.cirkel {
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(223, 62, 201);
+    z-index:2;
+    border-radius: 50%;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform:rotate(45deg);
+    }
+    20% {
+        transform:rotate(0deg);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 0px;
+    }
+    30% {
+        transform:rotate(90deg);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    40% {
+        transform:rotate(45deg);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    50% {
+        transform: rotate(0deg);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    60% {
+        transform:rotate(45deg);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    70% {
+        transform:rotate(90deg);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    80% {
+        transform:rotate(0deg);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 0px;
+    }
+    90% {
+        transform:rotate(45deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }    
+}
