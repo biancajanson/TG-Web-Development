@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAKA,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAND,OAAe;EAO9B,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,QAAQ;CAcxB;;AAjBD,AAII,OAJG,CAIH,OAAO,CAAC;EACJ,KAAK,EATJ,OAAe;CAUnB;;AANL,AAOI,OAPG,CAOH,SAAS,CAAC;EACN,KAAK,EAXJ,OAAgB;CAYpB;;AATL,AAUI,OAVG,CAUH,gBAAgB,CAAC;EACb,OAAO,EAAC,IAAI;EACZ,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,MAAM;EACjB,eAAe,EAAE,QAAQ;EACzB,MAAM,EAAE,IAAI;CACf",
     "sources": [
-        "index.sass"
+        "index.scss"
     ],
     "names": [],
     "file": "index.css"

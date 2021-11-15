@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.navbar {
+  background-color: #2d2a2e;
+  font-size: 20px;
+  font-family: Elephant;
+}
+
+.navbar .active {
+  color: #aa14f0;
+}
+
+.navbar .nav-link {
+  color: #bc8cf2;
+}
+
+.navbar .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 10px;
+}
+/*# sourceMappingURL=index.css.map */
