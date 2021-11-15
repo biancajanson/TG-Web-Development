@@ -1,0 +1,21 @@
+@import 'variables';
+
+.navbar {
+    background-color: $background-color;
+    font-size: 20px;
+    font-family: Elephant;
+    .active {
+        color:$color1;
+    }
+    .nav-link {
+        color: $color2;
+    }
+    .container-fluid {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        margin: 10px;
+    }
+}
+
