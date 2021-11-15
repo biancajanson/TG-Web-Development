@@ -28,10 +28,36 @@
   margin: 10px;
 }
 
+/* ALGEMEEN */
 * {
   background-color: #2d2a2e;
 }
 
+h1, h2, h3, p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  color: #b330f0;
+  text-align: center;
+}
+
+h2 {
+  color: #bc8cf2;
+  text-align: center;
+}
+
+h3, p {
+  color: #eeeeee;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* END OF ALGEMEEN */
+/* INDEX */
 .content {
   height: 1000px;
   display: block;
@@ -44,24 +70,8 @@
   height: 300px;
 }
 
-h1, h2, h3, p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-h1 {
-  color: #bc8cf2;
-  text-align: center;
-}
-
-h2, h3, p {
-  color: #eeeeee;
-  text-align: center;
-}
-
-p {
-  text-size: 20px;
-}
-
+/* END OF INDEX */
+/* ABOUT ME */
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,6 +88,16 @@ p {
   border-radius: 50px;
 }
 
+/* ENF OF ABOUT ME */
+/* SKILLS */
+h2, h3, p {
+  text-align: left;
+}
+
+/* END OF SKILLS */
+/* WERKVERLEDEN */
+/* END OF WERKVERLEDEN */
+/* CONTACT */
 form {
   border-width: 1px;
   border-style: dashed;
@@ -120,6 +140,7 @@ textarea {
   color: #eeeeee;
 }
 
+/* END OF CONTACT */
 .footer {
   background-color: #2d2a2e;
   border-top: 1px solid white;

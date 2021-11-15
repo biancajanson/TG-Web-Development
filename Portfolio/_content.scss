@@ -3,24 +3,30 @@
 /* ALGEMEEN */ 
 * {
     background-color: $background-color;
+}
 
 h1, h2, h3, p {
     font-family: $font-family; 
 }
 
 h1 {
+    color: $color1;
+    text-align:center;
+}
+
+h2 {
     color: $color2;
     text-align:center;
 }
 
-h2, h3, p {
+h3, p {
     color: $text-color;
     text-align:center;
 }
 
 p {
-    text-size: 20px;
- }
+    font-size: 20px;
+}
 /* END OF ALGEMEEN */  
 
 /* INDEX */
@@ -53,7 +59,9 @@ p {
 /* ENF OF ABOUT ME */
 
 /* SKILLS */
-
+h2, h3, p {
+    text-align: left;
+}
 /* END OF SKILLS */ 
 
 /* WERKVERLEDEN */
