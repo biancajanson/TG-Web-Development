@@ -1,8 +1,8 @@
 @import 'variables';
 
+/* ALGEMEEN */ 
 * {
     background-color: $background-color;
-
 
 h1, h2, h3, p {
     font-family: $font-family; 
@@ -21,7 +21,9 @@ h2, h3, p {
 p {
     text-size: 20px;
  }
- /* INDEX */
+/* END OF ALGEMEEN */  
+
+/* INDEX */
  .content {
     height:1000px;
     display:block;
@@ -100,5 +102,4 @@ textarea {
     background-color: $color2;
     color: $text-color;
 }
-
 /* END OF CONTACT */ 
