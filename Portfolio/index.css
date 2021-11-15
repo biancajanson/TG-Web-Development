@@ -35,7 +35,6 @@
 .content {
   height: 1000px;
   display: block;
-  border: 10px solid red;
   position: relative;
 }
 
@@ -43,6 +42,10 @@
   border-radius: 70px;
   width: 100%;
   height: 300px;
+}
+
+h1, h2, h3, p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 h1 {
@@ -73,6 +76,48 @@ p {
 
 .profielfoto {
   border-radius: 50px;
+}
+
+form {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: #b330f0;
+  padding: 15px;
+  width: 1000px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: small;
+}
+
+label {
+  float: left;
+  width: 250px;
+  text-align: right;
+  margin-right: 15px;
+  color: #eeeeee;
+}
+
+input {
+  background-color: #bc8cf2;
+  font-size: x-small;
+  border: 1px solid;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  border-color: #bc8cf2;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 250px;
+  height: 100px;
+  background-color: #bc8cf2;
+  border: 1px solid #b330f0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #bc8cf2;
+  color: #eeeeee;
 }
 
 .footer {
