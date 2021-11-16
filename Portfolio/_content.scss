@@ -5,7 +5,7 @@
     background-color: $background-color;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, span {
     font-family: $font-family; 
 }
 
@@ -21,7 +21,8 @@ h2 {
 h3 {
     color: $text-color;
 }
-p {
+
+p, span {
     color: $text-color;
     text-align:center;
     font-size: 20px;
@@ -73,7 +74,7 @@ p {
     text-align: left;
 }
 
-div > p {
+h3 > p {
     text-align: left;
 }
 /* END OF SKILLS */ 
@@ -83,6 +84,11 @@ h2 > p {
     text-align: left;
 }
 /* END OF WERKVERLEDEN */ 
+
+/* PROJECTEN */ 
+
+
+/* END OF PROJECTEN */ 
 
 /* CONTACT */ 
 form {

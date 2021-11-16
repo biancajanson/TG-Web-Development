@@ -33,7 +33,7 @@
   background-color: #2d2a2e;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, span {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -50,7 +50,7 @@ h3 {
   color: #eeeeee;
 }
 
-p {
+p, span {
   color: #eeeeee;
   text-align: center;
   font-size: 20px;
@@ -104,7 +104,7 @@ p {
   text-align: left;
 }
 
-div > p {
+h3 > p {
   text-align: left;
 }
 
@@ -115,6 +115,8 @@ h2 > p {
 }
 
 /* END OF WERKVERLEDEN */
+/* PROJECTEN */
+/* END OF PROJECTEN */
 /* CONTACT */
 form {
   border-width: 1px;
