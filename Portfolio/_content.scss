@@ -14,6 +14,22 @@ h1 {
     text-align:center;
 }
 
+h2 {
+    color: $color2;
+}
+
+h3 {
+    color: $text-color;
+}
+p {
+    color: $text-color;
+    text-align:center;
+    font-size: 20px;
+}
+/* END OF ALGEMEEN */  
+
+/* INDEX */
+
 .index {
     color: $color2;
     text-align:center;
@@ -24,15 +40,7 @@ h1 {
     text-align:center;
 }
 
-p {
-    color: $text-color;
-    text-align:center;
-    font-size: 20px;
-}
-/* END OF ALGEMEEN */  
-
-/* INDEX */
- .content {
+.content {
     height:1000px;
     display:block;
     position:relative;
@@ -58,10 +66,14 @@ p {
 .profielfoto {
     border-radius: 50px;
 }
-/* ENF OF ABOUT ME */
+/* END OF ABOUT ME */
 
 /* SKILLS */
-h2, h3, p {
+.skills {
+    text-align: left;
+}
+
+h3 > p {
     text-align: left;
 }
 /* END OF SKILLS */ 

@@ -42,14 +42,12 @@ h1 {
   text-align: center;
 }
 
-.index {
+h2 {
   color: #bc8cf2;
-  text-align: center;
 }
 
-.index2 {
+h3 {
   color: #eeeeee;
-  text-align: center;
 }
 
 p {
@@ -60,6 +58,16 @@ p {
 
 /* END OF ALGEMEEN */
 /* INDEX */
+.index {
+  color: #bc8cf2;
+  text-align: center;
+}
+
+.index2 {
+  color: #eeeeee;
+  text-align: center;
+}
+
 .content {
   height: 1000px;
   display: block;
@@ -90,9 +98,13 @@ p {
   border-radius: 50px;
 }
 
-/* ENF OF ABOUT ME */
+/* END OF ABOUT ME */
 /* SKILLS */
-h2, h3, p {
+.skills {
+  text-align: left;
+}
+
+h3 > p {
   text-align: left;
 }
 
