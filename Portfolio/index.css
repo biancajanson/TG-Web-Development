@@ -42,17 +42,19 @@ h1 {
   text-align: center;
 }
 
-h2 {
+.index {
   color: #bc8cf2;
   text-align: center;
 }
 
-h3, p {
+.index2 {
   color: #eeeeee;
   text-align: center;
 }
 
 p {
+  color: #eeeeee;
+  text-align: center;
   font-size: 20px;
 }
 
