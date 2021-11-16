@@ -44,12 +44,13 @@ p, span {
 .content {
     display:block;
     position:relative;
+    height: 300px;
 }
 
 .indexfoto {
     border-radius: 70px;
     width: 100%;
-    height: 30%;
+    height: 90%;
 } 
 /* END OF INDEX */
 
@@ -153,14 +154,15 @@ textarea {
         font-size: 10px;
     }
 
-    p {
+    p, span {
         font-size: 10px;
     }
 
     .container {
         width: 100%;
-        height: 100%;
+        height: 600px;
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .tekst {
@@ -169,8 +171,13 @@ textarea {
     }
 
     .profielfoto {
-        width: 100%;
-        height: 50%;
+        width: 250px;
+        height: 350px;
+
+    }
+
+    form {
+        width: 85%;
     }
 }
 /* END OF MEDIA QUERIES */ 
