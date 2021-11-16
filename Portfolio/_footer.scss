@@ -6,7 +6,9 @@
     color: $text-color;
     font-family: $font-family;    
     display:flex;
-    margin-top:1000px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
 }
 
 .column {
@@ -20,4 +22,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .column {
+        font-size: 8px;
+    }
 }
