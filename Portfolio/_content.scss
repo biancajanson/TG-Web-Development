@@ -182,6 +182,23 @@ textarea {
 }
 
 @media (min-width:480px) and (max-width:768px) {
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    p, span {
+        font-size: 13px;
+    }
+
+    
     .container {
         width: 100%;
         height: 600px;
@@ -197,7 +214,15 @@ textarea {
     .profielfoto {
         width: 250px;
         height: 350px;
-
+        margin-top: 50px;
     }
+
+    form {
+        width: 95%;
+    }
+
+    textarea {
+        width:150px;
+        height: 750px;
 }
 /* END OF MEDIA QUERIES */ 
