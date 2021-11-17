@@ -94,20 +94,26 @@ p, span {
 
 /* END OF INDEX */
 /* ABOUT ME */
-.container {
+.aboutme {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  top: 250px;
+  width: 100%;
 }
 
 .tekst {
-  width: 50%;
+  width: 40%;
 }
 
 .profielfoto {
+  width: 50%;
   border-radius: 50px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 /* END OF ABOUT ME */
