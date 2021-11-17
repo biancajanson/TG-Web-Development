@@ -105,8 +105,8 @@ h2 ~ p {
     height: 350px;
     width: 350px;
     margin: auto;
-    background-color: black;
-    z-index:2;
+    background-color:white;;
+    bottom: 75px;
 }
 
 .cirkel {
@@ -114,7 +114,6 @@ h2 ~ p {
     height: 200px;
     width: 200px;
     background-color: rgb(223, 62, 201);
-    z-index:2;
     border-radius: 50%;
     animation-name: change;
     animation-duration: 10s;
@@ -232,6 +231,7 @@ textarea {
 /* END OF CONTACT */ 
 
 /* MEDIA QUERIES */
+//TELEFOON
 @media (max-width: 480px) {
     .indexfoto {
         width:100%;
@@ -272,11 +272,21 @@ textarea {
 
     }
 
+    .container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cirkel {
+        width: 50%;
+        height: 50%;
+    }
     form {
         width: 85%;
     }
 }
 
+//TABLET
 @media (min-width:480px) and (max-width:768px) {
     h1 {
         font-size: 23px;
@@ -310,6 +320,16 @@ textarea {
         width: 250px;
         height: 350px;
         margin-top: 50px;
+    }
+
+    .container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cirkel {
+        width: 50%;
+        height: 50%;
     }
 
     form {

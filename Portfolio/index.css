@@ -154,8 +154,8 @@ h2 ~ p {
   height: 350px;
   width: 350px;
   margin: auto;
-  background-color: black;
-  z-index: 2;
+  background-color: white;
+  bottom: 75px;
 }
 
 .cirkel {
@@ -163,7 +163,6 @@ h2 ~ p {
   height: 200px;
   width: 200px;
   background-color: #df3ec9;
-  z-index: 2;
   border-radius: 50%;
   -webkit-animation-name: change;
           animation-name: change;
@@ -406,6 +405,14 @@ textarea {
     width: 250px;
     height: 350px;
   }
+  .container {
+    width: 100px;
+    height: 100px;
+  }
+  .cirkel {
+    width: 50%;
+    height: 50%;
+  }
   form {
     width: 85%;
   }
@@ -443,6 +450,14 @@ textarea {
     width: 250px;
     height: 350px;
     margin-top: 50px;
+  }
+  .container {
+    width: 200px;
+    height: 200px;
+  }
+  .cirkel {
+    width: 50%;
+    height: 50%;
   }
   form {
     width: 95%;
