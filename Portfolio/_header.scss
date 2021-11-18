@@ -40,13 +40,18 @@
     text-align: center;
 }
 
-@media screen and (max-height: 450px) {
+@media (max-width: 480px) {
+    .sideinfo: {
+        font-size: 1px;
+    }
+
     .sidenav {
         padding-top: 15px;
+        width: 60px;
     }
 
     .sidenav a {
-        font-size: 18px;
+        font-size: 10px;
     }
 }
 
