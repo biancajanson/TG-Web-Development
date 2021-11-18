@@ -1,4 +1,7 @@
 @import 'variables';
+* {
+    box-sizing: border-box;
+}
 
 .sidenav {
     height: 100%;
@@ -10,7 +13,6 @@
     background-color: $background-color;
     overflow-x: hidden;
     padding-top: 20px;
-    
 }
 
 .sidenav a {
@@ -30,6 +32,14 @@
     margin-left: 160px;
     font-size: 28px;
     padding: 0px 10px;
+}
+.sidefoto {
+    border-radius: 60px;
+    left: 20px;
+}
+
+.sideinfo {
+    font-size: 8px;
 }
 
 @media screen and (max-height: 450px) {
