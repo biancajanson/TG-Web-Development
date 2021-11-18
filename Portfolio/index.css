@@ -84,6 +84,7 @@ p, span {
   display: block;
   position: relative;
   height: 300px;
+  margin-left: 20%;
 }
 
 .indexfoto {
@@ -478,8 +479,9 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  width: 100%;
+  width: 80%;
   bottom: 0px;
+  margin-left: 20%;
 }
 
 .column {
