@@ -13,6 +13,7 @@
   background-color: #2d2a2e;
   overflow-x: hidden;
   padding-top: 20px;
+  padding-left: 10px;
 }
 
 .sidenav a {
@@ -36,11 +37,11 @@
 
 .sidefoto {
   border-radius: 60px;
-  left: 20px;
+  left: 30px;
 }
 
 .sideinfo {
-  font-size: 8px;
+  font-size: 12px;
 }
 
 @media screen and (max-height: 450px) {
