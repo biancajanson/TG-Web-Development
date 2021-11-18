@@ -32,10 +32,12 @@
 .sidefoto {
     border-radius: 60px; 
     margin-left: 30px;
+    height: 120px;
 }
 
 .sideinfo {
     font-size: 12px;
+    text-align: center;
 }
 
 @media screen and (max-height: 450px) {

@@ -32,10 +32,12 @@
 .sidefoto {
   border-radius: 60px;
   margin-left: 30px;
+  height: 120px;
 }
 
 .sideinfo {
   font-size: 12px;
+  text-align: center;
 }
 
 @media screen and (max-height: 450px) {
@@ -52,7 +54,7 @@
   background-color: #2d2a2e;
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, h4, p, span {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
@@ -66,7 +68,7 @@ h2 {
   color: #bc8cf2;
 }
 
-h3 {
+h3, h4 {
   color: #eeeeee;
 }
 
@@ -99,6 +101,14 @@ p, span {
   border-radius: 70px;
   width: 100%;
   height: 90%;
+}
+
+.info {
+  font-size: 15px;
+}
+
+.info span {
+  font-size: 15px;
 }
 
 /* END OF INDEX */
