@@ -1,33 +1,44 @@
 @import 'variables';
 
-.navbar {
+.sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     background-color: $background-color;
-    font-size: 20px;
-    font-family: $font-family;     
-    .active {
-        color:$color1;
-    }
-    .nav-link {
-        color: $color2;
-    }
+    overflow-x: hidden;
+    padding-top: 20px;
     
-    .container-fluid {
-        display:flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        margin: 10px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $color2;
+    display: block;
+    font-family: $font-family;
+}
+
+.sidenav a:hover {
+    color: $color1;
+}
+
+.main {
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 480px) {
-    .navbar {
-        font-size: 11px;
-    }
-}
-
-@media (min-width:480px) and (max-width:768px) {
-    .navbar {
-        font-size: 15px;
-    }
-}

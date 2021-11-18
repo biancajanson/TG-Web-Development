@@ -1,42 +1,40 @@
-.navbar {
+.sidenav {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
   background-color: #2d2a2e;
-  font-size: 20px;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #bc8cf2;
+  display: block;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.navbar .active {
+.sidenav a:hover {
   color: #b330f0;
 }
 
-.navbar .nav-link {
-  color: #bc8cf2;
+.main {
+  margin-left: 160px;
+  font-size: 28px;
+  padding: 0px 10px;
 }
 
-.navbar .container-fluid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 10px;
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    font-size: 11px;
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-}
-
-@media (min-width: 480px) and (max-width: 768px) {
-  .navbar {
-    font-size: 15px;
+  .sidenav a {
+    font-size: 18px;
   }
 }
 
@@ -47,6 +45,7 @@
 
 h1, h2, h3, p, span {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -102,7 +101,8 @@ p, span {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   top: 250px;
-  width: 100%;
+  width: 80%;
+  margin-left: 20%;
 }
 
 .tekst {
@@ -123,6 +123,7 @@ p, span {
 /* SKILLS */
 .skills {
   text-align: left;
+  margin-left: 20%;
 }
 
 h3 > p {
@@ -131,12 +132,20 @@ h3 > p {
 
 /* END OF SKILLS */
 /* WERKVERLEDEN */
+.werkverleden {
+  margin-left: 20%;
+}
+
 div > p {
   text-align: left;
 }
 
 /* END OF WERKVERLEDEN */
 /* PROJECTEN */
+.projecten {
+  margin-left: 20%;
+}
+
 h2 ~ p {
   text-align: left;
 }
@@ -156,7 +165,7 @@ h2 ~ p {
   width: 350px;
   margin: auto;
   background-color: white;
-  bottom: 75px;
+  bottom: 50px;
 }
 
 .cirkel {
@@ -330,9 +339,10 @@ form {
   border-style: dashed;
   border-color: #b330f0;
   padding: 15px;
-  width: 97%;
+  width: 70%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: small;
+  margin-left: 20%;
 }
 
 label {

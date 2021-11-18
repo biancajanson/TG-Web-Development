@@ -7,6 +7,7 @@
 
 h1, h2, h3, p, span {
     font-family: $font-family; 
+    text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -45,6 +46,7 @@ p, span {
     display:block;
     position:relative;
     height: 300px;
+    margin-left: 20%;
 }
 
 .indexfoto {
@@ -59,7 +61,8 @@ p, span {
     display:flex;
     justify-content: space-around;
     top: 250px;
-    width: 100%;
+    width: 80%;
+    margin-left: 20%;
 }
 
 .tekst {
@@ -79,6 +82,7 @@ p, span {
 /* SKILLS */
 .skills {
     text-align: left;
+    margin-left: 20%;
 }
 
 h3 > p {
@@ -87,12 +91,20 @@ h3 > p {
 /* END OF SKILLS */ 
 
 /* WERKVERLEDEN */
+.werkverleden {
+    margin-left: 20%;
+}
+
 div > p {
     text-align: left;
 }
 /* END OF WERKVERLEDEN */ 
 
 /* PROJECTEN */ 
+.projecten {
+    margin-left: 20%;
+}
+
 h2 ~ p {
     text-align: left;
 }
@@ -106,7 +118,7 @@ h2 ~ p {
     width: 350px;
     margin: auto;
     background-color:white;;
-    bottom: 75px;
+    bottom: 50px;
 }
 
 .cirkel {
@@ -191,9 +203,10 @@ form {
     border-style: dashed;
     border-color: $color1;
     padding: 15px;
-    width: 97%;
+    width: 70%;
     font-family: $font-family;
     font-size: small;
+    margin-left: 20%;
 }
 
 label {
