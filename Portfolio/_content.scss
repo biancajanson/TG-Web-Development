@@ -46,7 +46,7 @@ p, span {
     display:block;
     position:relative;
     height: 300px;
-    margin-left: 20%;
+    margin-left: 180px;
 }
 
 .indexfoto {
@@ -66,10 +66,10 @@ p, span {
 /* ABOUT ME */
 .aboutme {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     top: 250px;
     width: 80%;
-    margin-left: 20%;
+    margin-left: 180px;
 }
 
 .tekst {
@@ -92,10 +92,10 @@ p, span {
 }
 .skills {
     text-align: left;
-    margin-left: 20%;
+    margin-left: 180px;
 }
 hr {
-    margin-left: 20%;
+    margin-left: 180px;
 }
 
 h3 > p {
@@ -105,7 +105,7 @@ h3 > p {
 
 /* WERKVERLEDEN */
 .werkverleden {
-    margin-left: 20%;
+    margin-left: 180px;
 }
 
 div > p {
@@ -115,7 +115,7 @@ div > p {
 
 /* PROJECTEN */ 
 .projecten {
-    margin-left: 20%;
+    margin-left: 180px;
 }
 
 h2 ~ p {
@@ -131,7 +131,7 @@ h2 ~ p {
     width: 350px;
     margin: auto;
     background-color:white;;
-    bottom: 50px;
+    
 }
 
 .cirkel {
@@ -219,7 +219,7 @@ form {
     width: 70%;
     font-family: $font-family;
     font-size: small;
-    margin-left: 20%;
+    margin-left: 180px;
 }
 
 label {
@@ -403,17 +403,13 @@ textarea {
 
     .projecten1 {
         width: 70%;
-        margin-left: 25%;
-    }
-
-    .projecten {
-        margin-left: 0%;
     }
 
     .container {
         width: 200px;
         height: 200px;
         margin-top: 10%;
+        margin-left: 50%;;
     }
 
     .cirkel {
