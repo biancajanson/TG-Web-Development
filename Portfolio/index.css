@@ -41,6 +41,9 @@
 }
 
 @media (max-width: 480px) {
+  .sideinfo {
+    font-size: 1px;
+  }
   .sidenav {
     padding-top: 15px;
     width: 60px;
