@@ -150,8 +150,16 @@ p, span {
 
 /* END OF ABOUT ME */
 /* SKILLS */
+.skills1 {
+  height: 800px;
+}
+
 .skills {
   text-align: left;
+  margin-left: 20%;
+}
+
+hr {
   margin-left: 20%;
 }
 
@@ -499,8 +507,12 @@ textarea {
   p, span {
     font-size: 13px;
   }
+  .content {
+    width: 70%;
+    margin-left: 25%;
+  }
   .aboutme {
-    width: 100%;
+    width: 70%;
     height: 600px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -509,9 +521,10 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 25%;
   }
   .tekst {
-    width: 100%;
+    width: 70%;
     height: 50%;
   }
   .profielfoto {
@@ -519,9 +532,28 @@ textarea {
     height: 350px;
     margin-top: 50px;
   }
+  .skills1 {
+    width: 70%;
+    margin-left: 25%;
+  }
+  .skills {
+    margin-left: 0%;
+  }
+  .werkverleden {
+    width: 70%;
+    margin-left: 25%;
+  }
+  .projecten1 {
+    width: 70%;
+    margin-left: 25%;
+  }
+  .projecten {
+    margin-left: 0%;
+  }
   .container {
     width: 200px;
     height: 200px;
+    margin-top: 10%;
   }
   .cirkel {
     width: 50%;
@@ -546,9 +578,9 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  width: 80%;
+  width: 100%;
   bottom: 0px;
-  margin-left: 20%;
+  z-index: 1;
 }
 
 .column {
@@ -556,9 +588,9 @@ textarea {
   color: #eeeeee;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: small;
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
   padding: 2px;
   display: -webkit-box;
   display: -ms-flexbox;

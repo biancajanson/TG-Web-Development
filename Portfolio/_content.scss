@@ -87,8 +87,14 @@ p, span {
 /* END OF ABOUT ME */
 
 /* SKILLS */
+.skills1 {
+    height: 800px;
+}
 .skills {
     text-align: left;
+    margin-left: 20%;
+}
+hr {
     margin-left: 20%;
 }
 
@@ -305,6 +311,7 @@ textarea {
     .skills {
         margin-left: 0px;
     }
+
     .werkverleden {
         margin-top: 500px;
         margin-left: 0px;
@@ -356,15 +363,21 @@ textarea {
         font-size: 13px;
     }
 
+    .content {
+        width: 70%;
+        margin-left: 25%;
+    }
+
     .aboutme {
-        width: 100%;
+        width: 70%;
         height: 600px;
         flex-direction: column-reverse;
         align-items: center;
+        margin-left: 25%;
     }
 
     .tekst {
-        width: 100%;
+        width: 70%;
         height: 50%;
     }
 
@@ -374,9 +387,33 @@ textarea {
         margin-top: 50px;
     }
 
+    .skills1 {
+        width: 70%;
+        margin-left: 25%;
+    }
+
+    .skills {
+        margin-left: 0%;
+    }
+
+    .werkverleden {
+        width: 70%;
+        margin-left: 25%;
+    }
+
+    .projecten1 {
+        width: 70%;
+        margin-left: 25%;
+    }
+
+    .projecten {
+        margin-left: 0%;
+    }
+
     .container {
         width: 200px;
         height: 200px;
+        margin-top: 10%;
     }
 
     .cirkel {
