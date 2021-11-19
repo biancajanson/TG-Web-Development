@@ -50,15 +50,12 @@
   .sidenav {
     padding-top: 15px;
     width: 100%;
-    height: 400px;
+    height: 500px;
+    position: absolute;
   }
   .sidenav a {
     font-size: 10px;
     text-align: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
@@ -413,10 +410,6 @@ textarea {
 /* END OF CONTACT */
 /* MEDIA QUERIES */
 @media (max-width: 480px) {
-  .indexfoto {
-    width: 100%;
-    height: 20%;
-  }
   h1 {
     font-size: 20px;
   }
@@ -429,8 +422,18 @@ textarea {
   p, span {
     font-size: 10px;
   }
+  .indexfoto {
+    width: 100%;
+    height: 20%;
+  }
+  .content {
+    margin-top: 500px;
+    margin-left: 0px;
+  }
   .aboutme {
     width: 100%;
+    margin-top: 500px;
+    margin-left: 0px;
     height: 600px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -448,9 +451,29 @@ textarea {
     width: 250px;
     height: 350px;
   }
+  .skills1 {
+    margin-top: 500px;
+    margin-left: 0px;
+  }
+  .skills {
+    margin-left: 0px;
+  }
+  .werkverleden {
+    margin-top: 500px;
+    margin-left: 0px;
+    height: 400px;
+  }
+  .projecten1 {
+    margin-top: 500px;
+    margin-left: 0px;
+  }
+  .projecten {
+    margin-left: 0px;
+  }
   .container {
     width: 100px;
     height: 100px;
+    margin-bottom: 10%;
   }
   .cirkel {
     width: 50%;
@@ -458,6 +481,8 @@ textarea {
   }
   form {
     width: 85%;
+    margin-top: 500px;
+    margin-left: 0px;
   }
 }
 
