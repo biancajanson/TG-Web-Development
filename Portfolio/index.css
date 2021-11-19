@@ -42,14 +42,23 @@
 
 @media (max-width: 480px) {
   .sideinfo {
-    font-size: 1px;
+    font-size: 10px;
+  }
+  .sidefoto {
+    margin-left: 35%;
   }
   .sidenav {
     padding-top: 15px;
-    width: 60px;
+    width: 100%;
+    height: 400px;
   }
   .sidenav a {
     font-size: 10px;
+    text-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -543,7 +552,10 @@ textarea {
 
 @media (max-width: 480px) {
   .column {
-    font-size: 8px;
+    font-size: 10px;
+  }
+  .footer {
+    margin-left: 0%;
   }
 }
 /*# sourceMappingURL=index.css.map */
