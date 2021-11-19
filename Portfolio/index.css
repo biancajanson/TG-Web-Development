@@ -90,6 +90,10 @@ p, span {
 
 /* END OF ALGEMEEN */
 /* INDEX */
+.sideinfo {
+  text-align: left;
+}
+
 .index {
   color: #bc8cf2;
   text-align: center;
@@ -119,6 +123,10 @@ p, span {
 
 .info span {
   font-size: 15px;
+}
+
+.fab {
+  color: #bc8cf2;
 }
 
 /* END OF INDEX */

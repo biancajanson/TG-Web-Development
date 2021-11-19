@@ -32,6 +32,10 @@ p, span {
 
 /* INDEX */
 
+.sideinfo {
+    text-align: left;
+}
+
 .index {
     color: $color2;
     text-align:center;
@@ -60,6 +64,11 @@ p, span {
     span {
         font-size: 15px;
     }
+}
+
+.fab {
+    color: $color2;
+    
 }
 /* END OF INDEX */
 
