@@ -20,8 +20,7 @@
     height:200px;
     width: 200px;
     position:absolute;
-    text-align: center;
-    padding-top: 30px;
+    text-align: center; 
 }
 
 .box:hover {
