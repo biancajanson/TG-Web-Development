@@ -10,29 +10,27 @@
     
 
 <script>
-/*Opdracht 1.1a
+/* VARIABLES AND DATATYPES */ 
+/*Opdracht 1.1a*/ 
 let letOefening = "Let Tekst"
-let letOefening = "Let Tekst Twee!"
-console.log(letOefening)
-*/
-
-/*Opdracht 1.1b
-let letOefening = "Let Tekst"
+let letOefening1 = "Let Tekst Twee!"
 console.log(letOefening)
 
-letOefening = "Let Tekst Twee"
-console.log(letOefening)
-*/
+/*Opdracht 1.1b*/ 
+let letOefening2 = "Let Tekst"
+console.log(letOefening2)
 
-/*Opdracht 1.1c
+letOefening2 = "Let Tekst Twee"
+console.log(letOefening2)
+
+/*Opdracht 1.1c*/ 
 const constOefening = "Const Tekst"
 console.log(constOefening)
 
-constOefening = "Const Tekst Twee!"
-console.log(constOefening)
-*/
+constOefening1 = "Const Tekst Twee!"
+console.log(constOefening1)
 
-/*Opdracht 1.1d
+/*Opdracht 1.1d*/ 
 varOefening = "Var Tekst"
 console.log(varOefening)
 
@@ -41,53 +39,86 @@ console.log(varOefening)
 
 var varOefening = "Var Tekst Drie!"
 console.log(varOefening)
-*/ 
 
-/*Opdracht 1.2
+/*Opdracht 1.2*/ 
 let typeQuestion = "Number"
 console.log("This is a " + typeof typeQuestion + ", with the value:" + typeQuestion)
-*/ 
 
-/*Opdracht 1.3
+/*Opdracht 1.3*/ 
 let someNumber = 5;
 let anotherNumber = "5";
 console.log(someNumber + anotherNumber)
-*/ 
 
-/*Opdracht 1.4a
+/*Opdracht 1.4a*/ 
 let increment = 1;
 console.log(++increment);
 console.log(increment++);
-*/
 
-/*Opdracht 1.4c
+/*Opdracht 1.4c*/ 
 let modulo = 24 % 10
 console.log(modulo)
 
 let division = 24 / 10
 console.log(division)
-*/
 
-/*Opdracht 1.4d
-let someNumber = "Tekst"
-console.log(!someNumber)
-*/ 
+/*Opdracht 1.4d*/ 
+let someNumber1 = "Tekst"
+console.log(!someNumber1)
 
-/*Opdracht 2.1
+/* STRING METHODS */ 
+/*Opdracht 2.1*/ 
 let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen. ";
-A
+/*A*/ 
 console.log(someKittens.substring(0,43))
 console.log(someKittens.substring(44,81))
-B
+/*B*/ 
 console.log(someKittens.toUpperCase())
-*/ 
 
-/*Opdracht 2.3
-let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen. ";
-// console.log(someKittens,split());
-const myArray = someKittens.split(" ");
+/*Opdracht 2.3*/ 
+let someKittens1 = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen. ";
+const myArray = someKittens1.split(" ");
 console.log(myArray)
-*/ 
+
+/* CONDITIONS */ 
+let somevalue = true;
+
+if (somevalue) {
+    console.log("Zie je de eerste?");
+}
+
+if (!somevalue) {
+    console.log("Zie je de tweede?");
+}
+
+let someValue = true;
+
+if (someValue) {
+    console.log("Zie je de eerste?");
+}   else  {
+    console.log("Zie je de tweede?")
+}
+
+let someValue1 = 5;
+
+if (someValue1 < 5) {
+    console.log("Kleiner dan 5")
+}   else if (someValue1 > 5) {
+    console.log("Groter dan 5")
+}   else {
+    console.log("Precies 5")
+}
+
+let condition = 1;
+
+switch (condition) {
+    case 0: 
+    case 1: 
+    case 2: 
+        console.log("The number is 0, 1 or 2.")
+        break;
+    default: 
+        console.log("The number is not 0, 1 or 2.")
+}
 </script>    
 </body>
 </html>
