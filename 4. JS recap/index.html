@@ -85,7 +85,6 @@ let somevalue = true;
 if (somevalue) {
     console.log("Zie je de eerste?");
 }
-
 if (!somevalue) {
     console.log("Zie je de tweede?");
 }
@@ -118,6 +117,111 @@ switch (condition) {
         break;
     default: 
         console.log("The number is not 0, 1 or 2.")
+}
+
+let someNumber2 = 5;
+someNumber == 6 ? console.log(someNumber2 + " is 6") : console.log(someNumber2 + " is not 6")
+
+/*Opdracht 3.1 */ 
+// C
+let x = 4;
+let y = 8;
+if (x == 4 && y == 8) {
+    console.log("Result!")
+}
+
+// D
+if (x == 4 || y == 8) {
+    console.log("Result!")
+}
+
+// E
+if (!x == 4 || !y == 8) {
+    console.log("No result!")
+}   else {
+    console.log("Result!")
+}
+
+//F
+if (x == 4) {
+    console.log("Result!")
+}   else if (y == 8) {
+    console.log("Result!")
+}   else {
+    console.log("No Result")
+}
+
+//G t/m J
+let a = 4;
+
+if (a > 5 && a < 10) {
+    console.log("Result G!")
+}   else if (a >= 11 && a <= 20) {
+    console.log("Result H!")
+}   else if (a == 21 || a == 23) {
+    console.log("Result I!")
+}   else if (a < 35 || (a > 40 && a < 45)) {
+    console.log("Result J!")
+}   else {
+    console.log("No Result")
+}
+
+//K
+let b = 6;
+if (b > 5 && b < 10) {
+    console.log("Result G!")
+}
+if (b >= 11 && b <= 20) {
+    console.log("Result H!")
+}
+if (b == 21 || b == 23) {
+    console.log("Result I!")
+}
+if (b < 35 || (b > 40 && b < 45)) {
+    console.log("Result J!")
+}   
+
+/* Opdracht 3.2 */ 
+//A
+let c = 20;
+if (c == 3) {
+    console.log("Getal is 3")
+}   else if (c > 4) {
+    console.log("Getal is groter dan 4")
+}   if (c > 11) {
+    console.log("Getal is groter dan 11")
+}   else if (c < 3) {
+    console.log("Getal is kleiner dan 3")
+}
+
+//C
+let d = 1;
+if (d == 1) {
+    console.log("Januari")
+}   else if (d == 2) {
+    console.log("Februari")
+}   else if (d == 3) {
+    console.log("Maart")
+}   else if (d == 4) {
+    console.log("April")
+}   else if (d == 5) {
+    console.log("Mei")
+}   else if (d == 6) {
+    console.log("Juni")
+}   else if (d == 7) {
+    console.log("Juli")
+}   else if (d == 8) {
+    console.log("Augustus")
+}   else if (d == 9) {
+    console.log("September")
+}   else if (d == 10) {
+    console.log("Oktober")
+}   else if (d == 11) {
+    console.log("November")
+}   else if (d == 12) {
+    console.log("December")
+}   else if (d < 1 || d > 12) {
+    console.log("Geen geldige maand!")
 }
 </script>    
 </body>
