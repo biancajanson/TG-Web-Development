@@ -10,11 +10,33 @@
     <button onclick="myFunction()">Functional Buttons!</button>
     <br>
     <input onchange="myFunction()">
+    <br>
+
 <script>
     let count = 0;
     function myFunction() {
         console.log("You have called this function " + count + " times!")
     }
+
+    function myFunction2(parameter) {
+        console.log("This function has the parameter: " + parameter)
+    }
+    let someVariable = 22;
+    myFunction2(someVariable);
+    myFunction2("All sorts of parameters are allowed");
+
+    function myFunction3(firstParam, secondParam, thirdParam) {
+        console.log("This function has the first parameter: " + firstParam)
+        console.log("This function has the second paramter: " + secondParam)
+        console.log("This function has the third parameter: " + thirdParam)
+    }
+    myFunction3("First parameter", 22, true)
+
+    function myFunction4(firstParam, ...restParam) {
+        console.log("This function has the first parameter: "+ firstParam)
+        console.log("This function has the rest parameter: " + restParam)
+    }
+    myFunction4("First parameter", 1, 2, 3, 4, 5, 6)
 </script>    
 </body>
 </html>
