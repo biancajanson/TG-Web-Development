@@ -11,7 +11,8 @@
     <br>
     <input onchange="myFunction()">
     <br>
-
+    <button onclick="pressButton(this)">Button #1</button>
+    <button onclick="pressButton(this)">Button #2</button>
 <script>
     let count = 0;
     function myFunction() {
@@ -43,14 +44,32 @@
     }
     let result = winBlackjack();
     console.log(result);
-
+/*
     let timesWon = 0;
     function winBlackjack() {
         timesWon++
         debugger;
         console.log("Am I debugged yet?")
     }
-
+*/
+/*
+    function pressButtonOne() {
+        console.log("Button #1")
+    }
+    function pressButtonTwo() {
+        console.log("Button #2")
+    }
+*/ 
+/*
+    let b1 = document.getElementById("b1").innerText
+    let b2 = document.getElementById("b2").innerText
+    function pressButtonOne() {
+        console.log(b1)
+    }
+    function pressButtonTwo() {
+        console.log(b2)
+    }
+*/ 
 
 </script>    
 </body>
