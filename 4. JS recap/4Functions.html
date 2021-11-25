@@ -7,13 +7,19 @@
     <title>Functions</title>
 </head>
 <body>
+    <h3>Theorie</h3>
     <button onclick="myFunction()">Functional Buttons!</button>
     <br>
     <input onchange="myFunction()">
     <br>
     <button onclick="pressButton(this)">Button #1</button>
     <button onclick="pressButton(this)">Button #2</button>
+    <br><br><br>
+    <h3>Opdrachten</h3>
+    <a href="4Functions-opdr.html">Opdrachten</a>
+
 <script>
+// THEORIE
     let count = 0;
     function myFunction() {
         console.log("You have called this function " + count + " times!")
@@ -70,6 +76,19 @@
         console.log(b2)
     }
 */ 
+    function pressButton(parameter) {
+        console.log(parameter.innerText)
+    }
+
+    let plusThree = value => value + 3;
+    console.log(plusThree(2))
+
+    function calculate(value) {
+        return value + 3;
+    }
+    let plusThree1 = calculate;
+    console.log(plusThree1(2))
+
 
 </script>    
 </body>
