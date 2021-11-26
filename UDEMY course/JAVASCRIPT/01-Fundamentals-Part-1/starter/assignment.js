@@ -38,3 +38,10 @@ console.log(description);
 
 const descriptionNew = `${country} is in ${continent}, and its ${population} million people speak ${language}.`;
 console.log(descriptionNew);
+
+// LECTURE: Type Conversion and Coercion
+console.log('9'- '5'); // voorspelling: 4
+console.log('19' - '13' + '17') // voorspelling: 617
+console.log('19' - '13' + 17) // voorspelling: 23
+console.log('123' < 57); // voorspelling: false
+console.log(5 + 6 + '4' + 9 - 4 - 2) // voorspelling: 1143
