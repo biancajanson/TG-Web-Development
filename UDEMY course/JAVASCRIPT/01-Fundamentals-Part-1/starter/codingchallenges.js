@@ -1,4 +1,9 @@
 // CODING CHALLENGE 1
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightMark = 1.95
+
 const massMark = 95;
 const heightMark = 1.88;
 const massJohn = 85;
