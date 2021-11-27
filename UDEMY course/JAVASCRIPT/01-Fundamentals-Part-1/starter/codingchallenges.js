@@ -23,3 +23,22 @@
 // }   else {
 //     console.log(`John's BMI (${bmiJohn}) is higher than Mark's (${bmiMark})!`)
 // }
+
+// CODING CHALLENGE 3
+
+const scoreDolphins1 = 96;
+const scoreDolphins2 = 108;
+const scoreDolphins3 = 89;
+const scoreKoalas1 = 88;
+const scoreKoalas2 = 91;
+const scoreKoalas3 = 110;
+
+console.log((scoreDolphins1 + scoreDolphins2 + scoreDolphins3)/3, (scoreKoalas1 + scoreKoalas2 + scoreKoalas3)/3);
+
+if ((scoreDolphins1 + scoreDolphins2 + scoreDolphins3)/3 > (scoreKoalas1 + scoreKoalas2 + scoreKoalas3)/3) {
+    console.log("The Dolphins have won!")
+}   else if ((scoreKoalas1 + scoreKoalas2 + scoreKoalas3)/3 > (scoreDolphins1 + scoreDolphins2 + scoreDolphins3)/3) {
+    console.log("The Koalas have won!")
+}   else {
+    console.log("There is a draw, so no one have won...")
+}
