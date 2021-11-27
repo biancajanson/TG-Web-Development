@@ -47,12 +47,23 @@ console.log(typeof language);
 // console.log(5 + 6 + '4' + 9 - 4 - 2) // voorspelling: 1143
 
 // LECTURE: Equality Operators: == vs. ===
-const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+// const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
 
-if (numNeighbours === 1) {
-    console.log('Only 1 border!')
-}   else if (numNeighbours > 1) {
-    console.log('More than 1 border')
+// if (numNeighbours === 1) {
+//     console.log('Only 1 border!')
+// }   else if (numNeighbours > 1) {
+//     console.log('More than 1 border')
+// }   else {
+//     console.log('No borders')
+// }
+
+// LECTURE: Logical Operators
+const speaksEnglish = true;
+const lessThan50Million = true;
+const isIsland = false;
+
+if (speaksEnglish && lessThan50Million && !isIsland) {
+    console.log("You should live in The Netherlands")
 }   else {
-    console.log('No borders')
+    console.log("The Netherlands does not meet your criteria :(")
 }
