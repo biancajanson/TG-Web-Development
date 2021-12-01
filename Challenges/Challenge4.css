@@ -1,0 +1,69 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@biancajanson 
+smulCode
+/
+TG-Web-Development
+Public
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+TG-Web-Development/challenge_4/CSS/style.css
+@smulCode
+smulCode challenge4
+Latest commit afca21a 4 minutes ago
+ History
+ 1 contributor
+26 lines (23 sloc)  377 Bytes
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: #111;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header {
+  display: grid;
+  place-content: center;
+  font-size: 2em;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
