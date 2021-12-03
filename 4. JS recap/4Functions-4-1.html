@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="pressButton(this)">Click!</button>
+    <br>
+    <!-- <input onchange="myFunction()" id="opdrachtb"> -->
+    <input type="text"  id="opdrachtb" onkeyup="nameReader()">
+    <input type="text" id="opdrachtc" placeholder="Enter text" onchange="getVal()">
+<script> 
+//Opdracht 4.1
+// A
+function pressButton(parameter) {
+    console.log("Hello World!")
+}
+
+// B
+let personName = document.getElementById('opdrachtb');
+let person = personName.value;
+
+function nameReader(personName) {
+    console.log(document.getElementById('opdrachtb').value);
+}
+
+// C
+let val = document.getElementById('opdrachtc').value;
+
+function getVal() {
+  let val = document.getElementById('opdrachtc').value;
+  console.log(`${val} is text value`);
+
+}
+// D
+let number = 3;
+let calculate = number => number * 2;
+
+let result = calculate(number);
+console.log("answer " + result);
+</script>    
+</body>
+</html>
