@@ -8,7 +8,7 @@
 </head>
 <body>
 <script>
-// Opdracht 5.1
+// Opdracht 5.1 Arrays
 // A
 const opdrachta = [8, 5, 9, 2, 1, 10, 3, 7, 6, 4];
 console.log(opdrachta);
@@ -39,6 +39,31 @@ opdrachtb.shift();
 opdrachtb.unshift('Peer');
 opdrachtb.unshift('Aardbei');
 console.log(opdrachtb);
+
+// Opdracht 5.2 Loops
+// A
+const dutchSports = ['Voetbal', 'Hockey', 'Schaatsen'];
+// console.log(dutchSports[0]);
+// console.log(dutchSports[1]);
+// console.log(dutchSports[2]);
+
+// B
+// for loop
+for (let i = 0; i < dutchSports.length; i++) {
+    console.log(dutchSports[i]);
+}
+
+// for in
+for (const index in dutchSports) {
+    console.log(index);
+}
+
+// for of
+for (const item of dutchSports) {
+    console.log(item);
+}
+
+// Dus de for in loop geeft de index aan van de items (door gebruik van index) en de for of loop geeft de daadwerkelijke items weer (door gebruik van item)
 </script>
 </body>
 </html>
