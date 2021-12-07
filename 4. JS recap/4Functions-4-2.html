@@ -7,6 +7,55 @@
     <title>Opdracht 4.2</title>
 </head>
 <body>
-    
+    <div class="test"></div>
+    <div class="test"></div>
+    <div class="test"></div>
+    <div class="test"></div>
+    <div class="test"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <p id="test">Opdracht V</p>
+    <button onclick="myFunction()">Try me!</button>
+    <p id="result"></p>
+    <button onclick="myFunction2()"" id="myBtn">Opdracht VI</button>
+    <p id="result2"></p>
+    <p></p>
+
+<script>
+    // I
+    const opdrachtI = document.getElementsByClassName('test')
+    console.log(opdrachtI);
+    // hier pakt hij alle classes met de naam test
+
+    // II
+    const opdrachtII = document.getElementsByTagName('div');
+    console.log(opdrachtII);
+    // hier pakt hij alle elementen van het type div
+
+    // III
+    const opdrachtIII = document.querySelector('.test');
+    console.log(opdrachtIII);
+    // hier pakt hij het eerste element dat de class test heeft
+
+    // IV
+    const opdrachtIV = document.querySelectorAll('.test');
+    console.log(opdrachtIV);
+    // hier pakt hij alle elementen dat de class test hebben
+
+    // V
+    function myFunction () {
+        var x = document.getElementById("test").innerHTML;
+        document.getElementById("result").innerHTML = x;
+    }
+    // hiermee kan je de inhoud van het ene element kopieren naar het andere element. Je pakt met element.innerHTML dus de inhoud van het element.
+
+    // F
+    function myFunction2 () {
+        var x = document.getElementById("myBtn").innerText;
+        document.getElementById("result2").innerHTML = x;
+    }
+    // hiermee kun je de text in een element pakken
+</script>    
 </body>
 </html>
