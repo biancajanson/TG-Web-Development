@@ -7,6 +7,44 @@
     <title>Opdracht 4.4</title>
 </head>
 <body>
-    
+    <p>Zit deze persoon in onze groep?</p>
+    <p class="message">Vul een naam in...</p>
+    <input type="text" id="typedName" class="nameInput" onblur="nameChecker()">
+
+    <p id="nameOutput"></p>
+
+
+    <!-- <input onchange="nameInGroup"> -->
+<script>
+const bianca = 'Bianca';
+const miki = 'Miki';
+const carolyn = 'Carolyn';
+const roibin = 'Roibin';
+const susana = 'Susana';
+
+const name = 'Bianca';
+
+const nameChecker = () => {
+    const name = document.getElementById('typedName').value;
+    if (name == 'bianca' || name == 'Bianca'){
+        console.log(`De persoon (${name}) zit in deze groep.`)
+        document.getElementById("nameOutput").innerHTML = `De persoon (${name}) zit in deze groep.`;
+    }else if (name == 'miki' || name == 'Miki'){
+        document.getElementById("nameOutput").innerHTML = `De persoon (${name}) zit in deze groep.`;
+        console.log(`De persoon (${name}) zit in deze groep.`);
+    }else if (name == 'carolyn' || name == 'Carolyn'){
+        document.getElementById("nameOutput").innerHTML = `De persoon (${name}) zit in deze groep.`;
+        console.log(`De persoon (${name}) zit in deze groep.`);
+    }else if (name == 'roibin' || name == 'Roibin'){
+        document.getElementById("nameOutput").innerHTML = `De persoon (${name}) zit in deze groep.`;
+        console.log(`De persoon (${name}) zit in deze groep.`);
+    }else if (name == 'susana' || name == 'Susana'){
+        document.getElementById("nameOutput").innerHTML = `De persoon (${name}) zit in deze groep.`;
+        console.log(`De persoon (${name}) zit in deze groep.`);
+    }else {document.getElementById("nameOutput").innerHTML = `De persoon (${name}) zit niet in deze groep.`;
+        console.log(`De persoon (${name}) zit niet in deze groep.`);
+    }
+}
+</script>
 </body>
 </html>
