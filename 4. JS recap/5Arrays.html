@@ -10,35 +10,35 @@
 <script>
 // Opdracht 5.1 Arrays
 // A
-const opdrachta = [8, 5, 9, 2, 1, 10, 3, 7, 6, 4];
-console.log(opdrachta);
+const opdrachtA = [8, 5, 9, 2, 1, 10, 3, 7, 6, 4];
+console.log(opdrachtA);
 
 // B
-let opdrachtb = ['Appel', 'Aardbei', 'Sinaasappel', 'Meloen', 'Ananas'];
-console.log(opdrachtb);
+let opdrachtB = ['Appel', 'Aardbei', 'Sinaasappel', 'Meloen', 'Ananas'];
+console.log(opdrachtB);
 
 // C
-console.log(opdrachtb[0], opdrachtb[1]);
+console.log(opdrachtB[0], opdrachtB[1]);
 
 // D
-console.log(opdrachtb[Math.floor(Math.random()*5)]);
+console.log(opdrachtB[Math.floor(Math.random()*5)]);
 
 // E
-console.log(opdrachtb.length);
+console.log(opdrachtB.length);
 
 // F
 
 
 // G
-opdrachtb[0] = 'Peer';
-console.log(opdrachtb);
+opdrachtB[0] = 'Peer';
+console.log(opdrachtB);
 
 // H
-opdrachtb.shift();
-opdrachtb.shift();
-opdrachtb.unshift('Peer');
-opdrachtb.unshift('Aardbei');
-console.log(opdrachtb);
+opdrachtB.shift();
+opdrachtB.shift();
+opdrachtB.unshift('Peer');
+opdrachtB.unshift('Aardbei');
+console.log(opdrachtB);
 
 // Opdracht 5.2 Loops
 // A
@@ -104,6 +104,35 @@ for (let i = 2; i <= 51; i++) {
     fib[i] = fib[i -2] + fib[i -1];
     console.log(fib[i]);
 }
+
+// H
+// bubblesort
+let arr = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+console.log(arr);
+
+function bubbleSort(arr){
+    let i, j;
+    let len = arr.length;
+    let isSwapped = false;
+
+    for(i=0; i < len; i++){
+        isSwapped = false;
+        for (j=0; j < len; j++){
+            if(arr[j] > arr[j+1]) {
+                let temp = arr[j]
+                arr[j] = arr[j+1];
+                arr[j+1]= temp;
+                isSwapped = true;
+            }
+        }
+        if (!isSwapped) {
+            break;
+        }    
+    }
+    console.log(arr)
+}
+
+bubbleSort(arr);
 </script>
 </body>
 </html>
