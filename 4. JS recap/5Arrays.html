@@ -67,12 +67,13 @@ for (const item of dutchSports) {
 
 // C
 // for loop. even getallen tussen 1 t/m 20;
-// const getallen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-// for (let i = 0; i < 20; i++) {
-//     if (getallen[i] % 2 === 0) {
-//         console.log(getallen[i])
-//     }
-// }
+const getallen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+for (let i = 0; i < 20; i++) {
+    if (getallen[i] % 2 === 0) {
+        console.log(getallen[i])
+    }
+}
+
 // nested loops
 // D
 // for loop, getallen 1 t/m 10
@@ -84,17 +85,25 @@ for (const item of dutchSports) {
 // 3e nested loop, tafel van 3
 
  
-const getallen = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+const getallen1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
 for (let i = 1; i < 11; i++) {
-    console.log(`Loop 1: ` + getallen[i]);
+    console.log(`Loop 1: ` + getallen1[i]);
     for (let j = 2; j < 21; j+=2) {
-        console.log(getallen[j])} {
+        console.log(getallen1[j])} {
         for (let k = 3; k < 31; k+=3){
-            console.log(getallen[k]);
+            console.log(getallen1[k]);
         }
     }
 }
 
+// G
+// eerste 50 getallen rij van fibonacci
+const fib = [0,1];
+
+for (let i = 2; i <= 51; i++) {
+    fib[i] = fib[i -2] + fib[i -1];
+    console.log(fib[i]);
+}
 </script>
 </body>
 </html>
