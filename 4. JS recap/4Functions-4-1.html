@@ -7,40 +7,34 @@
     <title>Opdracht 4.1</title>
 </head>
 <body>
-   <button onclick="pressButton(this)">Click!</button>
+    <button class="button">Click me</button>
     <br>
-    <!-- <input onchange="myFunction()" id="opdrachtb"> -->
-    <input type="text"  id="opdrachtb" onkeyup="nameReader()">
+    <input type="text" id="mijnInput" onchange="logger2(input)">
+    <div class="display-text">123</div>
+    <br>
     <input type="text" id="opdrachtc" placeholder="Enter text" onchange="getVal()">
 <script> 
 //Opdracht 4.1
+const button = document.querySelector(".button");
+const button2 = document.querySelector(".button2");
+const input = document.getElementById('mijnInput');
 // A
-function pressButton(parameter) {
-    console.log("Hello World!")
+function logger() {
+  console.log("Hello World");
 }
+button.addEventListener("click", logger);
 
 // B
-let personName = document.getElementById('opdrachtb');
-let person = personName.value;
-
-function nameReader(personName) {
-    console.log(document.getElementById('opdrachtb').value);
+const result = logger2();
+function logger2() {
+    console.log(input);
 }
 
-// C
-let val = document.getElementById('opdrachtc').value;
-
-function getVal() {
-  let val = document.getElementById('opdrachtc').value;
-  console.log(`${val} is text value`);
-
+const multiply = (number) => {
+    return number * 2
 }
-// D
-let number = 3;
-let calculate = number => number * 2;
+console.log(`antwoord 6 * 2 = ` + multiply(6))
 
-let result = calculate(number);
-console.log("answer " + result);
 </script>    
 </body>
 </html>
