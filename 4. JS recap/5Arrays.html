@@ -7,7 +7,9 @@
     <title>Arrays & Loops</title>
 </head>
 <body>
-    
+    <div>Some Text</div>
+    <div>Some Text</div>
+    <p id="demo"></p>
 <script>
 // Opdracht 5.1 Arrays
 // A
@@ -176,7 +178,61 @@ sportsLength.forEach(function (sport) {
 
 });
 
+// Opdracht 5.4
+// A
+let arrayLike = document.querySelectorAll('div');
+console.log(arrayLike)
 
+const myArr = Array.from(arrayLike);
+console.log(myArr);
+
+// B
+const ages = [32, 33, 16, 40];
+const result = ages.filter(checkAdult);
+
+function checkAdult(age) {
+    return age >= 18;
+}
+
+console.log(result)
+// geeft alleen de waardes in een nieuwe array weer die aan de gegeven voorwaarde (in de functie) voldoen
+
+// C
+const ages1 = [3, 10, 18, 20, 23];
+const result1 = ages1.find(checkAge1);
+
+function checkAge1(age) {
+    return age > 18;
+}
+console.log(result1)
+// geeft alleen de eerste waarde weer die aan de gegeven voorwaarde (in de functie) voldoet.
+
+// D
+const ages2 = [3, 10, 18, 20, 23];
+const result2 = ages2.some(checkAdult2);
+
+function checkAdult2(age) {
+    return age > 18;
+}
+console.log(result2)
+// geeft aan of er minimaal 1 waarde is die aan de gegeven voorwaarde (in de functie) voldoet.
+
+// E
+const ages3 = [3, 10, 18, 20, 23];
+const result3 = ages3.every(checkAdult3);
+
+function checkAdult3(age) {
+    return age > 18;
+}
+console.log(result3)
+// geeft aan of iedere waarde aan de gegeven voorwaarde (in de functie) voldoet.
+
+// F
+const ages4 = [3, 10, 18, 20, 23];
+const result4 = ages4.includes(21);
+
+console.log(result4)
+// geeft aan of de gevraagde waarde zich in de array bevindt.
 </script>
 </body>
 </html>
