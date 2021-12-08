@@ -7,6 +7,41 @@
     <title>Objects</title>
 </head>
 <body>
-    
+
+<script>
+// Opdracht 6.1  
+// Maak meerdere objects Pet met een naam en een soort. Maak een ander dier met elk van de soorten constructor en log deze in de console.
+// Zie je een onverwachte property?
+
+// A 
+// Object constructor
+let objectPet = new Object ();
+
+objectPet.name = 'Binky'
+objectPet.soort = 'beagle'
+
+console.log(objectPet)
+// Literal constructor
+let literalPet = {
+    name : 'Purdy',
+    soort : 'dalmatier'
+}
+
+console.log(literalPet)
+// Function constructor
+function Pet(name, soort) {
+    this.name = name
+    this.soort = soort
+}
+
+let functionConstructed = new Pet("Kenzi", "bull")
+
+console.log(Pet)
+
+// Singleton constructor
+
+
+// Class-based constructor
+</script>
 </body>
 </html>
