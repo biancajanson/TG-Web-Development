@@ -39,9 +39,31 @@ let functionConstructed = new Pet("Kenzi", "bull")
 console.log(Pet)
 
 // Singleton constructor
+let singletonPet = new function () {
+    this.name = "Boris",
+    this.soort = "chihuahua"
+}
 
+console.log(singletonPet)
 
 // Class-based constructor
+class Pet1 {
+    constructor(name, soort) {
+        this.name = "Oscar",
+        this.soort = "retrievar" // expres fout geschreven om te kijken wat er gebeurt nadat ik let classConstructed heb gedaan
+    }
+    writeBadCode() {
+        console.log("Foutje, kan iedereen gebeuren")
+    }
+}
+console.log(Pet1)
+let classConstructed = new Pet1("Oscar", "retriever")
+console.log(classConstructed)
+
+// onverwacht: bij class-based constructor pakt hij de eerste waarde (die ik expres verkeerd heb geschreven ipv de nieuwe op regel 60)
+
+// B
+
 </script>
 </body>
 </html>
