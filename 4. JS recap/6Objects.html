@@ -63,6 +63,81 @@ console.log(classConstructed)
 // onverwacht: bij class-based constructor pakt hij de eerste waarde (die ik expres verkeerd heb geschreven ipv de nieuwe op regel 60, om te kijken welke waarde hij zou pakken)
 
 // B
+objectPet1 = Object.create(objectPet);
+objectPet1.name = 'Binky'
+objectPet1.soort = 'Beagle'
+
+console.log(objectPet1)
+
+// C
+class allPersons {
+    constructor(name,age) {
+        this.name = name
+        this.age = age
+    }
+}
+let person = []
+person[0] = new allPersons('Bianca',34)
+person[1] = new allPersons('Alfons',42)
+person[2] = new allPersons('Sophia',8)
+person[3] = new allPersons('Sterre',8)
+person[4] = new allPersons('Hans',70)
+person[5] = new allPersons('Rinske',60)
+person[6] = new allPersons('Wouter',28)
+person[7] = new allPersons('Judith',27)
+person[8] = new allPersons('Shauny',27)
+person[9] = new allPersons('Rainier',30)
+
+person.sort(function(a, b) {
+    return a.age - b.age;
+});
+
+for(let i = 0; i < person.length; i++) {
+    let onePerson = person[i].name + ': ' + person[i].age
+    let allThePersons = []
+        allThePersons += onePerson
+console.log(allThePersons)
+
+}
+
+// Opdracht 6.2
+// A
+function allClubs(clubName,clubType,memberCount,clubInfo) {
+        this.clubName = clubName;
+        this.clubType = clubType;
+        this.memberCount = memberCount;
+        this.clubInfo = clubInfo;
+}
+
+// B
+function contactInfo(adres,phone,contactPerson) {
+        this.adres = adres;
+        this.phone = phone;
+        this.contactPerson = contactPerson;
+}
+const club1Info = new contactInfo('street 1','0123456789-1','Bianca');
+const club2Info = new contactInfo('street 2','0123456789-2','Alfons');
+const club3Info = new contactInfo('street 3','0123456789-3','Sophia');
+const club4Info = new contactInfo('street 4','0123456789-4','Sterre');
+const club5Info = new contactInfo('street 5','0123456789-5','Shauny');
+
+// C
+let clubs = [];
+clubs[0] = new allClubs('club1','sportschool',34,club1Info);
+clubs[1] = new allClubs('club2','squashclub',252,club2Info);
+clubs[2] = new allClubs('club3','zwemschool',823,club3Info);
+clubs[3] = new allClubs('club4','tafeltennisvereniging',236,club4Info);
+clubs[4] = new allClubs('club5','fietsclub',592,club5Info);
+
+console.log(clubs[0].clubName);
+
+for(let i = 0; i < clubs.length; i++) {
+    let showClubContact;
+    let showAllClubContact = [];
+    showClubContact = clubs[i].clubName + ': ' + clubs[i].clubInfo.phone + ', ' + clubs[i].clubInfo.contactPerson;
+    showAllClubContact += showClubContact;
+    console.log(showAllClubContact);
+}
 
 </script>
 </body>
