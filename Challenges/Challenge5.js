@@ -39,6 +39,6 @@ function showCat() {
         `A lie is like a cat: you need to stop it before it gets out the door or it’s really hard to catch.`,
         `A cat will be your friend, but never your slave.`
     ]
-    let catQuote = catQuotes[Math.floor(MAth.random() * catQuotes.length)];
+    let catQuote = catQuotes[Math.floor(Math.random() * catQuotes.length)];
     modalText.innerText = catQuotes;
 }
