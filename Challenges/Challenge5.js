@@ -18,7 +18,7 @@ function generateModal1() {
     const modalText = document.createElement('p');
     modalText.classList.add('modalText');
     modal.appendChild(modalText);
-    modalText.innerText = 'test';
+    modalText.innerText = 'Een foto van een kat';
     modalContainer.onclick = () => {
         modalContainer.innerHTML = ""
     }
@@ -39,7 +39,7 @@ function generateModal2() {
     const modalText = document.createElement('p');
     modalText.classList.add('modalText');
     modal.appendChild(modalText);
-    modalText.innerText = 'test';
+    modalText.innerText = 'Een foto van een hond';
     modalContainer.onclick = () => {
         modalContainer.innerHTML = ""
     }
@@ -60,7 +60,7 @@ function generateModal3() {
     const modalText = document.createElement('p');
     modalText.classList.add('modalText');
     modal.appendChild(modalText);
-    modalText.innerText = 'test';
+    modalText.innerText = 'Een foto van een papegaai';
     modalContainer.onclick = () => {
         modalContainer.innerHTML = ""
     }
