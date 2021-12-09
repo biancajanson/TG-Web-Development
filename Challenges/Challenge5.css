@@ -1,1 +1,79 @@
-/* No CSS *//*# sourceMappingURL=Challenge5.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: turquoise;
+  color: black;
+}
+
+.buttonContainer {
+  height: 10%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightpink;
+  position: absolute;
+  border-radius: 20px;
+}
+
+button {
+  padding: .9em;
+  font-weight: bold;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+  border: none;
+}
+
+.modalContainer {
+  z-index: 1;
+  border: 1px solid black;
+  background-color: lightpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.modalContainer .modal {
+  width: 900px;
+}
+
+.modalContainer .modal .modalImage {
+  width: 50%;
+  height: 100%;
+}
+/*# sourceMappingURL=Challenge5.css.map */
