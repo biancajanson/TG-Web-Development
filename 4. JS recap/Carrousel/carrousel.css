@@ -34,4 +34,38 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carrousel__button--left {
+    left: -40px;
+}
+
+.carrousel__button--right {
+    right: -40px;
+}
+.carrousel__button img {
+    width: 30px;
+}
+
+.carrousel__nav {
+
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carrousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0,.3);
+    margin: 0 12px;
+}
+
+.carrousel__indicator.current-slide {
+    background: rgba(0,0,0,.75);
 }
