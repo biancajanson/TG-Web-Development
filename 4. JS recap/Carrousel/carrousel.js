@@ -6,7 +6,26 @@ const dotsNav = document.querySelector('.carrousel__nav');
 const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
+// console.log(slideWidth);
 
-slides[0].style.left = 0;
-slides[1].style.left = slideWidth + 'px';
-slides[2].style.left = slideWidth * 2 + 'px';
+// arrange the slides next to one another
+const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+};
+slides.forEach(setSlidePosition);
+
+// when I click left, move slides to the left
+
+
+// when I click right, move slides to the right
+nextButton.addEventListener('click', e => {
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+    const amountToMove = nextSlide.style.left;
+    // move to the slide
+    track.style.transform = 'translateX(-' + amountToMove + ')';
+})
+
+
+// when I click the nav indicators, move to that slide
+
