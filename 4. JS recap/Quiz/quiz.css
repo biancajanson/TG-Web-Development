@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', bold;
 }
 .container {
     position: relative;
@@ -11,21 +11,25 @@ body {
 }
 
 .start-button {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', bold;
     margin: 0 auto;
     padding: 5px;
+    width: 50px;
+    height: 30px;
     display: flex;
     justify-content: center;
     background-color: rgb(26,122,126);
     font-weight: bold;
+    border: none;
 }
 
-.vragen {
-    position: absolute;
-    width: 400px;
-    height: 600px;
+.container-vragen {
+    position: relative;
+    width: 350px;
+    height: 500px;
     margin: 0 auto;
     background-color: rgb(26, 122, 126);
+    border: none;
 }
 
 .is-hidden {
@@ -37,4 +41,39 @@ body {
     font-weight: bold;
     display:flex;
     justify-content: center;
+    width: 100%;
+}
+
+.quiz-tellen {
+    position:absolute;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    top: 60px;
+}
+
+.quiz-vragen {
+    position: absolute;
+    display: flex;
+    top: 100px;
+    width: 100%;
+    justify-content: center;
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prev-button, .next-button {
+    font-family: 'Indie Flower', bold;
+    background-color: rgb(36, 190, 196);
+    border: none;
+    position: relative;
+    top: 440px;
+    width: 100px;
+
 }
