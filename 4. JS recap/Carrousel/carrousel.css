@@ -1,7 +1,7 @@
 .carrousel {
     position: relative;
     height: 600px;
-    width: 35%;
+    width: 365px;
     margin: 0 auto;
 }
 
@@ -68,6 +68,7 @@
     height: 15px;
     background: rgba(0,0,0,.3);
     margin: 0 12px;
+    cursor: pointer;
 }
 
 .carrousel__indicator.current-slide {
