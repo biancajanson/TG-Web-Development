@@ -11,21 +11,26 @@ function beginQuiz() {
     quizVragen.classList.add('container-vragen');
     container.appendChild(quizVragen);
     start.classList.add('is-hidden');
+
     const quizTitel = document.createElement('div');
     quizTitel.classList.add('quiz-titel');
     quizVragen.appendChild(quizTitel);
     quizTitel.innerText = 'Math Problem';
+    
     const quizTellen = document.createElement('div');
     quizTellen.classList.add('quiz-tellen');
     quizVragen.appendChild(quizTellen);
     quizTellen.innerText = '1/6';
+    
     const vragen = document.createElement('div');
     vragen.classList.add('quiz-vragen');
     quizVragen.appendChild(vragen);
     vragen.innerText = 'VRAGEN (NOG INVOEREN)';
+    
     const bottomButtons = document.createElement('div');
     bottomButtons.classList.add('bottom-buttons');
     quizVragen.appendChild(bottomButtons);
+    
     const prevButton = document.createElement('button');
     const nextButton = document.createElement('button')
     prevButton.classList.add('prev-button');
@@ -35,3 +40,11 @@ function beginQuiz() {
     prevButton.innerText = 'Vorige';
     nextButton.innerText = 'Volgende';
 }
+
+// bottomButtons.onclick = () => {
+//     nextQuestion()
+// }
+
+// function nextQuestion() {
+
+// }
