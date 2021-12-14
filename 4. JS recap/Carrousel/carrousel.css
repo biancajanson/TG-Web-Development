@@ -15,6 +15,7 @@
     background: lightgreen;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carrousel__track {
@@ -54,7 +55,7 @@
 }
 
 .carrousel__nav {
-
+    background: pink;
     display: flex;
     justify-content: center;
     padding: 10px 0;
