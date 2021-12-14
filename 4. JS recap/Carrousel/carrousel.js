@@ -6,9 +6,7 @@ const dotsNav = document.querySelector('.carrousel__nav');
 const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-// console.log(slideWidth);
 
-// arrange the slides next to one another
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 };
@@ -38,7 +36,6 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     }
 }
 
-// when I click left, move slides to the left
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
@@ -50,10 +47,8 @@ prevButton.addEventListener('click', e => {
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
     hideShowArrows(slides, prevButton, nextButton, prevIndex)
-
 });
 
-// when I click right, move slides to the right
 nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
@@ -64,11 +59,7 @@ nextButton.addEventListener('click', e => {
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
     hideShowArrows(slides, prevButton, nextButton, nextIndex)
-
 });
-
-
-// when I click the nav indicators, move to that slide
 
 dotsNav.addEventListener('click', e => {
     // what indicator was clicked on?
