@@ -55,7 +55,6 @@
 }
 
 .carrousel__nav {
-    background: pink;
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -73,4 +72,8 @@
 
 .carrousel__indicator.current-slide {
     background: rgba(0,0,0,.75);
+}
+
+.is-hidden {
+    display: none
 }
