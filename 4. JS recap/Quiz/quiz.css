@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Indie Flower', cursive;
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.start-button {
+    font-family: 'Indie Flower', cursive;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(26,122,126);
+    font-weight: bold;
+}
+
+.vragen {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgb(26, 122, 126);
+}
+
+.is-hidden {
+    display: none
+}
+
+.quiz-titel {
+    font-size: 50px;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+}
