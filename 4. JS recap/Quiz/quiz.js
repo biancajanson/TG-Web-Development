@@ -71,10 +71,10 @@ function beginQuiz() {
     prevButton.innerText = 'Vorige';
     nextButton.innerText = 'Volgende';
 }
-
+let pos = 0, test, test_status, question, choice, choices, chA, chB, chC, chD, chE, correct = 0;
 // vragen en antwoorden
-function questions() {
-    const allQuestions = [{
+const questions = [
+    {
         question: "what is 24 + 42",
         options: ["45", "66", "82", "69", "68"],
         answer: 1,
@@ -98,6 +98,16 @@ function questions() {
         question: "what is 56 + 11",
         options: ["102", "37", "44", "67", "50"],
         answer: 3
-    }];
-    
+    }
+];
+
+function get(x){
+    return document.getElementByClassName(x);
+}
+
+function renderQuestion(){
+    UITSLAG = get("uitslag");
+    if(pos >= questions.length){
+        quizTellen.innerHTML = "Gefeliciteerd. Je hebt "+correct+" van de "+questions.length+" vragen goed."
+    }
 }
