@@ -1,6 +1,10 @@
 const start = document.querySelector('.start-button');
 const container = document.querySelector('.container');
 
+const prevButton = document.createElement('button');
+const nextButton = document.createElement('button');
+const bottomButtons = document.createElement('div');
+
 // als je op start klikt, opent er een div met math problems
 start.onclick = () => {
     beginQuiz()
@@ -27,12 +31,9 @@ function beginQuiz() {
     quizVragen.appendChild(vragen);
     vragen.innerText = 'VRAGEN (NOG INVOEREN)';
     
-    const bottomButtons = document.createElement('div');
     bottomButtons.classList.add('bottom-buttons');
     quizVragen.appendChild(bottomButtons);
     
-    const prevButton = document.createElement('button');
-    const nextButton = document.createElement('button')
     prevButton.classList.add('prev-button');
     nextButton.classList.add('next-button');
     bottomButtons.appendChild(prevButton);
