@@ -55,12 +55,42 @@ body {
     top: 60px;
 }
 
-.quiz-vragen {
+.quiz-vraag {
     position: absolute;
     display: flex;
     top: 100px;
-    width: 100%;
+    width: 95%;
+    height: 20%;
     justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    left: 2.5%;
+    font-family: 'Indie Flower', bold;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    display:flex;
+}
+
+.quiz-antwoorden {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 190px;
+    left: 2.5%;
+    height: 200px;
+    width: 95%;
+    font-family: 'Indie Flower', bold;
+    font-size: 18px;
+}
+
+.quiz-antwoord1, .quiz-antwoord2, .quiz-antwoord3, .quiz-antwoord4, .quiz-antwoord5{
+    height: 40px;
+    padding: 0;
+    background-color: white;
 }
 
 .bottom-buttons {
