@@ -1,0 +1,9 @@
+body {
+  font-family: arial;
+  margin: 1rem;
+}
+
+.result:first-letter {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=Challenge6.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,KAAK;EAClB,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,OAAO,AAAA,aAAa,CAAC;EACnB,cAAc,EAAE,SAAS;CAC1B",
+    "sources": [
+        "Challenge6.scss"
+    ],
+    "names": [],
+    "file": "Challenge6.css"
+}
