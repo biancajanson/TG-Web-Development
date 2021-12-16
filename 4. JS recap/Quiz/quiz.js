@@ -55,10 +55,12 @@ function beginQuiz() {
     const vragen = document.createElement('div');
     vragen.classList.add('quiz-vraag');
     quizVragen.appendChild(vragen);
+    vragen.innerText = 'hier komen de vragen';
     
     const antwoorden = document.createElement('ol');
     antwoorden.classList.add('quiz-antwoorden');
     quizVragen.appendChild(antwoorden);
+    antwoorden.innerText = 'hier komen 5 antwoordmogelijkheden';
 
     const bottomButtons = document.createElement('div');
     bottomButtons.classList.add('bottom-buttons');
@@ -72,3 +74,4 @@ function beginQuiz() {
     bottomButtons.appendChild(nextButton);
     prevButton.innerText = 'Vorige';
     nextButton.innerText = 'Volgende';
+}
