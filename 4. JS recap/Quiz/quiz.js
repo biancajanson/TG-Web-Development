@@ -130,4 +130,3 @@ function beginQuiz() {
 //     quiz-antwoord5.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chE+"</label>";
 //     test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
 // }
-
