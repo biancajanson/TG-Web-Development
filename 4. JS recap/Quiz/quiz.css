@@ -80,18 +80,18 @@ p {
     display: flex;
     flex-direction: column;
     top: 190px;
-    left: 2.5%;
     height: 200px;
-    width: 95%;
     font-family: 'Indie Flower', bold;
     font-size: 18px;
+    background-color: white;
+    left: 10px;
 }
 
-.quiz-antwoord1, .quiz-antwoord2, .quiz-antwoord3, .quiz-antwoord4, .quiz-antwoord5{
+/* .quiz-antwoord1, .quiz-antwoord2, .quiz-antwoord3, .quiz-antwoord4, .quiz-antwoord5{
     height: 40px;
     padding: 0;
     background-color: white;
-}
+} */
 
 .bottom-buttons {
     display: flex;
