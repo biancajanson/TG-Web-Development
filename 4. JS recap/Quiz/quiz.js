@@ -27,7 +27,6 @@ function beginQuiz() {
     const vragen = document.createElement('div');
     vragen.classList.add('quiz-vraag');
     quizVragen.appendChild(vragen);
-    vragen.innerText = 'VRAGEN (NOG INVOEREN)';
     
     const antwoorden = document.createElement('div');
     antwoorden.classList.add('quiz-antwoorden');
@@ -71,43 +70,64 @@ function beginQuiz() {
     prevButton.innerText = 'Vorige';
     nextButton.innerText = 'Volgende';
 }
-let pos = 0, test, test_status, question, choice, choices, chA, chB, chC, chD, chE, correct = 0;
-// vragen en antwoorden
-const questions = [
-    {
-        question: "what is 24 + 42",
-        options: ["45", "66", "82", "69", "68"],
-        answer: 1,
-    }, {
-        question: "what is 5 * 4",
-        options: ["9", "30", "20", "40", "1"],
-        answer: 2,
-    }, {
-        question: "what is 25 - 11",
-        options: ["14", "12", "15", "10", "13"],
-        answer: 0,
-    }, {
-        question: "what is 25 / 5",
-        options: ["5", "20", "30", "125", "10"],
-        answer: 0,
-    }, {
-        question: "what is 1/2 of 6",
-        options: ["2", "1", "9", "12", "3"],
-        answer: 4
-    }, {
-        question: "what is 56 + 11",
-        options: ["102", "37", "44", "67", "50"],
-        answer: 3
-    }
-];
+// let pos = 0, test, test_status, question, choice, choices, chA, chB, chC, chD, chE, correct = 0;
+// // vragen en antwoorden
+// const questions = [
+//     {
+//         question: "what is 24 + 42",
+//         options: ["45", "66", "82", "69", "68"],
+//         answer: 1,
+//     }, {
+//         question: "what is 5 * 4",
+//         options: ["9", "30", "20", "40", "1"],
+//         answer: 2,
+//     }, {
+//         question: "what is 25 - 11",
+//         options: ["14", "12", "15", "10", "13"],
+//         answer: 0,
+//     }, {
+//         question: "what is 25 / 5",
+//         options: ["5", "20", "30", "125", "10"],
+//         answer: 0,
+//     }, {
+//         question: "what is 1/2 of 6",
+//         options: ["2", "1", "9", "12", "3"],
+//         answer: 4
+//     }, {
+//         question: "what is 56 + 11",
+//         options: ["102", "37", "44", "67", "50"],
+//         answer: 3
+//     }
+// ];
 
-function get(x){
-    return document.getElementByClassName(x);
-}
+// function get(x){
+//     return document.getElementByClassName(x);
+// }
 
-function renderQuestion(){
-    UITSLAG = get("uitslag");
-    if(pos >= questions.length){
-        quizTellen.innerHTML = "Gefeliciteerd. Je hebt "+correct+" van de "+questions.length+" vragen goed."
-    }
-}
+// function renderQuestion(){
+//     container = get("container");
+//     if(pos >= questions.length){
+//         quizTellen.innerHTML = "Gefeliciteerd. Je hebt "+correct+" van de "+questions.length+" vragen goed."
+//         pos = 0;
+//         correct = 0;
+//         return false;
+//     }
+//     get("quiz-tellen").innerHTML = (pos+1)+"/"+questions.length;
+
+//     question = questions[pos].question;
+//     chA = questions[pos].a;
+//     chB = questions[pos].b;
+//     chC = questions[pos].c;
+//     chD = questions[pos].d;
+//     chE = questions[pos].e;
+//     vragen.innerHTML = question;
+
+    
+//     quiz-antwoord1.innerHTML += "<label> <input type='radio' name='choices' value='A'> "+chA+"</label>";
+//     quiz-antwoord2.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chB+"</label>";
+//     quiz-antwoord3.innerHTML += "<label> <input type='radio' name='choices' value='C'> "+chC+"</label>";
+//     quiz-antwoord4.innerHTML += "<label> <input type='radio' name='choices' value='A'> "+chD+"</label>";
+//     quiz-antwoord5.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chE+"</label>";
+//     test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+// }
+
