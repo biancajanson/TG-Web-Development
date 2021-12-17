@@ -24,7 +24,7 @@ let questionContainer = [
         answers: [102, 37, 44, 67, 50],
     }
 ];
-console.log(questionContainer)
+// console.log(questionContainer)
 // als je op start klikt, opent er een div met math problems
 start.onclick = () => {
     startQuiz()
@@ -57,6 +57,7 @@ function startQuiz() {
     answers.innerText = questionContainer[0].answers;
 
     console.log(questionContainer[0].answers)
+
     const bottomButtons = document.createElement('div');
     bottomButtons.classList.add('bottom-buttons');
     quizContainer.appendChild(bottomButtons);
