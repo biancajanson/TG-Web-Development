@@ -80,3 +80,7 @@ function startQuiz() {
     prevButton.innerText = 'Vorige';
     nextButton.innerText = 'Volgende';
 }
+
+function answerQuestion() {
+    
+}
