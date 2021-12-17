@@ -66,7 +66,6 @@ function startQuiz() {
 
         quizAnswers.innerText = answer;
     }
-    // console.log(questionContainer[0].answers)
 
     const bottomButtons = document.createElement('div');
     bottomButtons.classList.add('bottom-buttons');
