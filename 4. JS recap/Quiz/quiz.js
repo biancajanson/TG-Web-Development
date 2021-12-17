@@ -3,34 +3,28 @@ const container = document.querySelector('.container');
 const prev = document.querySelector('.prev-button');
 const next = document.querySelector('.next-button');
 
-const questionContainer = [
+let questionContainer = [
     {
         question: "what is 24 + 42",
-        options: ["45", "66", "82", "69", "68"],
-        answer: 1,
+        answers: [45, 66, 82, 69, 68],
     }, {
         question: "what is 5 * 4",
-        options: ["9", "30", "20", "40", "1"],
-        answer: 2,
+        answers: [9, 30, 20, 40, 1],
     }, {
         question: "what is 25 - 11",
-        options: ["14", "12", "15", "10", "13"],
-        answer: 0,
+        answers: [14, 12, 15, 10, 13],
     }, {
         question: "what is 25 / 5",
-        options: ["5", "20", "30", "125", "10"],
-        answer: 0,
+        answers: [5, 20, 30, 125, 10],
     }, {
         question: "what is 1/2 of 6",
-        options: ["2", "1", "9", "12", "3"],
-        answer: 4
+        answers: [2, 1, 9, 12, 3],
     }, {
         question: "what is 56 + 11",
-        options: ["102", "37", "44", "67", "50"],
-        answer: 3
+        answers: [102, 37, 44, 67, 50],
     }
 ];
-
+console.log(questionContainer)
 // als je op start klikt, opent er een div met math problems
 start.onclick = () => {
     startQuiz()
@@ -55,13 +49,14 @@ function startQuiz() {
     const questions = document.createElement('div');
     questions.classList.add('quiz-question');
     quizContainer.appendChild(questions);
-    questions.innerText = 'hier komen de vragen';
-
+    questions.innerText = questionContainer[0].question;
+    
     const answers = document.createElement('ol');
     answers.classList.add('quiz-answers');
     quizContainer.appendChild(answers);
-    answers.innerText = 'hier komen 5 antwoordmogelijkheden';
+    answers.innerText = questionContainer[0].answers;
 
+    console.log(questionContainer[0].answers)
     const bottomButtons = document.createElement('div');
     bottomButtons.classList.add('bottom-buttons');
     quizContainer.appendChild(bottomButtons);
