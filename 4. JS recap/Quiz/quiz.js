@@ -1,5 +1,10 @@
-const start = document.querySelector('.start-button');
+
 const container = document.querySelector('.container');
+const start = document.createElement('button');
+container.appendChild(start);
+start.classList.add('start-button');
+start.innerText = 'Start';
+
 const prev = document.querySelector('.prev-button');
 const next = document.querySelector('.next-button');
 
@@ -82,5 +87,5 @@ function startQuiz() {
 }
 
 function answerQuestion() {
-    
+
 }
