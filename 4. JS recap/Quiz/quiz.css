@@ -13,10 +13,11 @@ body {
 
 .start-button {
     font-family: 'Indie Flower', bold;
+    font-size: 20px;
     margin: 0 auto;
     padding: 5px;
-    width: 50px;
-    height: 30px;
+    width: 60px;
+    height: 40px;
     display: flex;
     justify-content: center;
     background-color: rgb(26,122,126);
@@ -115,4 +116,5 @@ p {
 
 .prev-button:hover, .next-button:hover {
     background-color: rgb(85, 238, 243);
+    delay: 
 }
