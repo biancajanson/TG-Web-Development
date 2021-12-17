@@ -51,12 +51,22 @@ function startQuiz() {
     quizContainer.appendChild(questions);
     questions.innerText = questionContainer[0].question;
     
-    const answers = document.createElement('ol');
-    answers.classList.add('quiz-answers');
-    quizContainer.appendChild(answers);
-    answers.innerText = questionContainer[0].answers;
+    const answerList = document.createElement('ol');
+    answerList.classList.add('quiz-answers');
+    quizContainer.appendChild(answerList);
+    
+    for (let answer of questionContainer[0].answers) {
+        const quizAnswers = document.createElement("li");
+        answerList.appendChild(quizAnswers);
+        quizAnswers.classList.add("quiz-answer");
 
-    console.log(questionContainer[0].answers)
+        const answerNumber = document.createElement("span");
+        quizAnswers.appendChild(answerNumber);
+        answerNumber.classList.add("answer-number");
+
+        quizAnswers.innerText = answer;
+    }
+    // console.log(questionContainer[0].answers)
 
     const bottomButtons = document.createElement('div');
     bottomButtons.classList.add('bottom-buttons');
