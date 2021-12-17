@@ -51,10 +51,10 @@ function startQuiz() {
     quizCount.innerText = '1/6';
     // functie voor tellen nog uitschrijven
     
-    const questions = document.createElement('div');
-    questions.classList.add('quiz-question');
-    quizContainer.appendChild(questions);
-    questions.innerText = questionContainer[0].question;
+    const questionList = document.createElement('div');
+    questionList.classList.add('quiz-question');
+    quizContainer.appendChild(questionList);
+    questionList.innerText = questionContainer[0].question;
     
     const answerList = document.createElement('ol');
     answerList.classList.add('quiz-answers');
