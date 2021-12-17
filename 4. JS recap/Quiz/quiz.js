@@ -24,7 +24,6 @@ let questionContainer = [
         answers: [102, 37, 44, 67, 50],
     }
 ];
-// console.log(questionContainer)
 // als je op start klikt, opent er een div met math problems
 start.onclick = () => {
     startQuiz()
@@ -45,6 +44,7 @@ function startQuiz() {
     quizCount.classList.add('quiz-count');
     quizContainer.appendChild(quizCount);
     quizCount.innerText = '1/6';
+    // functie voor tellen nog uitschrijven
     
     const questions = document.createElement('div');
     questions.classList.add('quiz-question');
