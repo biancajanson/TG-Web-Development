@@ -63,7 +63,8 @@ function startQuiz() {
         options: ["102", "37", "44", "67", "50"],
         answer: 3
     }
-];
+    ];
+
     const quizContainer = document.createElement('div');
     quizContainer.classList.add('container-questions');
     container.appendChild(quizContainer);
@@ -82,8 +83,14 @@ function startQuiz() {
     const questions = document.createElement('div');
     questions.classList.add('quiz-question');
     quizContainer.appendChild(questions);
-    questions.innerText = 'hier komen de vragen';
-    // questions.innerText = questionContainer.question;
+    // questions.innerText = 'hier komen de vragen';
+    const question = [];
+        for (let i=0; i<questionContainer.question; i++) {
+            return questionContainer.question[i]
+        }
+
+    // console.log(question)
+
 
 
     const answers = document.createElement('ol');
