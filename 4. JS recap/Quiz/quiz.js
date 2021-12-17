@@ -3,7 +3,41 @@ const container = document.querySelector('.container');
 const prev = document.querySelector('.prev-button');
 const next = document.querySelector('.next-button');
 
-const questions = [
+// const questionContainer = [
+//     {
+//         question: "what is 24 + 42",
+//         options: ["45", "66", "82", "69", "68"],
+//         answer: 1,
+//     }, {
+//         question: "what is 5 * 4",
+//         options: ["9", "30", "20", "40", "1"],
+//         answer: 2,
+//     }, {
+//         question: "what is 25 - 11",
+//         options: ["14", "12", "15", "10", "13"],
+//         answer: 0,
+//     }, {
+//         question: "what is 25 / 5",
+//         options: ["5", "20", "30", "125", "10"],
+//         answer: 0,
+//     }, {
+//         question: "what is 1/2 of 6",
+//         options: ["2", "1", "9", "12", "3"],
+//         answer: 4
+//     }, {
+//         question: "what is 56 + 11",
+//         options: ["102", "37", "44", "67", "50"],
+//         answer: 3
+//     }
+// ];
+
+// als je op start klikt, opent er een div met math problems
+start.onclick = () => {
+    startQuiz()
+}
+
+function startQuiz() {
+    const questionContainer = [
     {
         question: "what is 24 + 42",
         options: ["45", "66", "82", "69", "68"],
@@ -30,41 +64,36 @@ const questions = [
         answer: 3
     }
 ];
-
-// als je op start klikt, opent er een div met math problems
-start.onclick = () => {
-    beginQuiz()
-}
-
-function beginQuiz() {
-    const quizVragen = document.createElement('div');
-    quizVragen.classList.add('container-vragen');
-    container.appendChild(quizVragen);
+    const quizContainer = document.createElement('div');
+    quizContainer.classList.add('container-questions');
+    container.appendChild(quizContainer);
     start.classList.add('is-hidden');
 
     const quizTitel = document.createElement('div');
     quizTitel.classList.add('quiz-titel');
-    quizVragen.appendChild(quizTitel);
+    quizContainer.appendChild(quizTitel);
     quizTitel.innerText = 'Math Problem';
     
-    const quizTellen = document.createElement('div');
-    quizTellen.classList.add('quiz-tellen');
-    quizVragen.appendChild(quizTellen);
-    quizTellen.innerText = '1/6';
+    const quizCount = document.createElement('div');
+    quizCount.classList.add('quiz-count');
+    quizContainer.appendChild(quizCount);
+    quizCount.innerText = '1/6';
     
-    const vragen = document.createElement('div');
-    vragen.classList.add('quiz-vraag');
-    quizVragen.appendChild(vragen);
-    vragen.innerText = 'hier komen de vragen';
-    
-    const antwoorden = document.createElement('ol');
-    antwoorden.classList.add('quiz-antwoorden');
-    quizVragen.appendChild(antwoorden);
-    antwoorden.innerText = 'hier komen 5 antwoordmogelijkheden';
+    const questions = document.createElement('div');
+    questions.classList.add('quiz-question');
+    quizContainer.appendChild(questions);
+    questions.innerText = 'hier komen de vragen';
+    // questions.innerText = questionContainer.question;
+
+
+    const answers = document.createElement('ol');
+    answers.classList.add('quiz-answers');
+    quizContainer.appendChild(answers);
+    answers.innerText = 'hier komen 5 antwoordmogelijkheden';
 
     const bottomButtons = document.createElement('div');
     bottomButtons.classList.add('bottom-buttons');
-    quizVragen.appendChild(bottomButtons);
+    quizContainer.appendChild(bottomButtons);
     
     const prevButton = document.createElement('button');
     const nextButton = document.createElement('button');

@@ -24,7 +24,7 @@ body {
     border: none;
 }
 
-.container-vragen {
+.container-questions {
     position: relative;
     width: 350px;
     height: 500px;
@@ -45,7 +45,7 @@ body {
     width: 100%;
 }
 
-.quiz-tellen {
+.quiz-count {
     position:absolute;
     width: 100%;
     font-size: 25px;
@@ -55,12 +55,13 @@ body {
     top: 60px;
 }
 
-.quiz-vraag {
+.quiz-question {
     position: absolute;
     display: flex;
     top: 100px;
     width: 95%;
     height: 20%;
+    flex-direction: column;
     justify-content: center;
     background-color: white;
     border-radius: 10px;
@@ -75,7 +76,7 @@ p {
     display:flex;
 }
 
-.quiz-antwoorden {
+.quiz-answers {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -84,7 +85,8 @@ p {
     font-family: 'Indie Flower', bold;
     font-size: 18px;
     background-color: white;
-    left: 10px;
+    left: 2.5%;
+    width: 83.5%;
 }
 
 /* .quiz-antwoord1, .quiz-antwoord2, .quiz-antwoord3, .quiz-antwoord4, .quiz-antwoord5{
