@@ -96,6 +96,7 @@ p {
     cursor: pointer;
     background-color: white;
 }
+
 .bottom-buttons {
     display: flex;
     justify-content: center;
