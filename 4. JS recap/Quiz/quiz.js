@@ -98,7 +98,7 @@ prevButton.addEventListener("click", prevQuizPage);
 
 function nextQuizPage(event) {
     currentQuestionIndex++;
-    console.log(currentQuestionIndex);
+    // console.log(currentQuestionIndex);
     quizQuestion.innerText = quizPages[currentQuestionIndex].question;
     console.log(quizPages[currentQuestionIndex].answers);
     for (let answer of quizPages[currentQuestionIndex].answers) {
