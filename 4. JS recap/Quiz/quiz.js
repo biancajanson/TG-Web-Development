@@ -54,7 +54,10 @@ function startQuiz() {
     const questionList = document.createElement('div');
     questionList.classList.add('quiz-question');
     quizContainer.appendChild(questionList);
+
+    for (let question of questionContainer[0].question) {
     questionList.innerText = questionContainer[0].question;
+    }
     
     const answerList = document.createElement('ol');
     answerList.classList.add('quiz-answers');
