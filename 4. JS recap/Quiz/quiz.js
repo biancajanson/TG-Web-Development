@@ -13,22 +13,6 @@ container.appendChild(startButton);
 startButton.classList.add('start-button');
 startButton.innerText = 'Start';
 
-//add prev and next buttons
-// const buttonContainer = document.createElement("div");
-// container.appendChild(buttonContainer);
-// buttonContainer.classList.add('button-container');
-// buttonContainer.classList.add('is-hidden');
-// const prevButton = document.createElement("button");
-// buttonContainer.appendChild(prevButton);
-// prevButton.classList.add('prev-button');
-// prevButton.innerText = "Vorige";
-// prevButton.classList.add('is-hidden');
-// const nextButton = document.createElement("button");
-// buttonContainer.appendChild(nextButton);
-// nextButton.classList.add("next-button");
-// nextButton.innerText = "Volgende";
-
-
 // starting the quiz
 startButton.addEventListener("click", startQuiz)
 
@@ -100,7 +84,6 @@ function addQuizPage() {
 const bottomButtons = document.createElement('div');
 bottomButtons.classList.add('bottom-buttons');
 quizContainer.appendChild(bottomButtons);
-
 const prevButton = document.createElement('button');
 const nextButton = document.createElement('button');
 prevButton.classList.add('prev-button');
@@ -116,7 +99,7 @@ prevButton.addEventListener("click", prevQuizPage);
 
 function nextQuizPage(event) {
     currentQuestionIndex++;
-    // console.log(currentQuestionIndex);
+    console.log(currentQuestionIndex);
     quizQuestion.innerText = quizPages[currentQuestionIndex].question;
     console.log(quizPages[currentQuestionIndex].answers);
     for (let answer of quizPages[currentQuestionIndex].answers) {
