@@ -35,7 +35,6 @@ startButton.addEventListener("click", startQuiz)
 function startQuiz() {
     startButton.classList.add('is-hidden');
     quizContainer.classList.remove("is-hidden");
-    // buttonContainer.classList.remove("is-hidden");
     currentQuestionIndex = 0;
     addQuizPage();
 }
