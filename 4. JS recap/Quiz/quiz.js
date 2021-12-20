@@ -96,9 +96,9 @@ nextButton.innerText = 'Volgende';
 nextButton.addEventListener("click", nextQuizPage);
 prevButton.addEventListener("click", prevQuizPage);
 
-function nextQuizPage(event) {
+function nextQuizPage(e) {
     currentQuestionIndex++;
-    // console.log(currentQuestionIndex);
+    console.log(currentQuestionIndex);
     quizQuestion.innerText = quizPages[currentQuestionIndex].question;
     console.log(quizPages[currentQuestionIndex].answers);
     for (let answer of quizPages[currentQuestionIndex].answers) {
