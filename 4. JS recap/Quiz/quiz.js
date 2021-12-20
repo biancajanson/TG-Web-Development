@@ -101,7 +101,7 @@ function nextQuizPage(e) {
     console.log(currentQuestionIndex); // deze verandert
     quizQuestion.innerText = quizPages[currentQuestionIndex].question;
     console.log(quizPages[currentQuestionIndex].answers); // hier zie ik ook de goede antwoorden
-    for (let answer of quizPages[currentQuestionIndex].answers) { // maar hier verandert alleen het laatste antwoord
+    for (let answer of quizPages[currentQuestionIndex].answers) { // maar hier verandert alleen het laatste antwoord, waaarom???
         quizAnswers.innerText = answer;
         // uitzoeken waarom alleen laatste antwoordmogelijkheid verandert
     }
