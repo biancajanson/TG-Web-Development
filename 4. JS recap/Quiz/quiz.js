@@ -77,7 +77,6 @@ function addQuizPage() {
         quizAnswers.classList.add("quiz-answer");
         quizAnswers.innerText = answer;
     }
-
 }
 
 // add prev and next button
