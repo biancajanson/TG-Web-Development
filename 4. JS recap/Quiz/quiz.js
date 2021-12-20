@@ -93,7 +93,7 @@ bottomButtons.appendChild(nextButton);
 prevButton.innerText = 'Vorige';
 nextButton.innerText = 'Volgende';
 
-// go to next page
+// go to other page
 nextButton.addEventListener("click", nextQuizPage);
 prevButton.addEventListener("click", prevQuizPage);
 
