@@ -1,14 +1,58 @@
+const container = document.querySelector(".container");
+const quizContainer = document.createElement('div');
+container.appendChild(quizContainer);
+quizContainer.classList.add('quiz-container');
+quizContainer.classList.add('is-hidden');
+let currentQuestionIndex;
+let quizQuestion;
+let quizAnswers;
 
-const container = document.querySelector('.container');
-const start = document.createElement('button');
-container.appendChild(start);
-start.classList.add('start-button');
-start.innerText = 'Start';
+// add start button
+const startButton = document.createElement('button');
+container.appendChild(startButton);
+startButton.classList.add('start-button');
+startButton.innerText = 'Start';
 
-const prev = document.querySelector('.prev-button');
-const next = document.querySelector('.next-button');
+//add prev and next buttons
+// const buttonContainer = document.createElement("div");
+// container.appendChild(buttonContainer);
+// buttonContainer.classList.add('button-container');
+// buttonContainer.classList.add('is-hidden');
+// const prevButton = document.createElement("button");
+// buttonContainer.appendChild(prevButton);
+// prevButton.classList.add('prev-button');
+// prevButton.innerText = "Vorige";
+// prevButton.classList.add('is-hidden');
+// const nextButton = document.createElement("button");
+// buttonContainer.appendChild(nextButton);
+// nextButton.classList.add("next-button");
+// nextButton.innerText = "Volgende";
 
-let questionContainer = [
+
+// starting the quiz
+startButton.addEventListener("click", startQuiz)
+
+function startQuiz() {
+    startButton.classList.add('is-hidden');
+    quizContainer.classList.remove("is-hidden");
+    // buttonContainer.classList.remove("is-hidden");
+    currentQuestionIndex = 0;
+    addQuizPage();
+}
+
+// add title and pagecounter
+const quizTitle = document.createElement('div');
+quizTitle.classList.add('quiz-titel');
+quizContainer.appendChild(quizTitle);
+quizTitle.innerText = 'Math Problem';
+let quizCount = document.createElement('div');
+quizCount.classList.add('quiz-count');
+quizContainer.appendChild(quizCount);
+quizCount.innerText = '1/6';
+// functie voor tellen nog uitschrijven
+
+// create six quiz pages with a question and answers
+let quizPages = [
     {
         question: "what is 24 + 42",
         answers: [45, 66, 82, 69, 68],
@@ -29,66 +73,80 @@ let questionContainer = [
         answers: [102, 37, 44, 67, 50],
     }
 ];
-// als je op start klikt, opent er een div met math problems
-start.onclick = () => {
-    startQuiz()
-}
 
-function startQuiz() {
-    const quizContainer = document.createElement('div');
-    quizContainer.classList.add('container-questions');
-    container.appendChild(quizContainer);
-    start.classList.add('is-hidden');
+function addQuizPage() {
+    // add elements for the quiz pages
+    quizQuestion = document.createElement("div");
+    quizQuestion.classList.add('quiz-question');
+    quizContainer.appendChild(quizQuestion);
 
-    const quizTitel = document.createElement('div');
-    quizTitel.classList.add('quiz-titel');
-    quizContainer.appendChild(quizTitel);
-    quizTitel.innerText = 'Math Problem';
-    
-    const quizCount = document.createElement('div');
-    quizCount.classList.add('quiz-count');
-    quizContainer.appendChild(quizCount);
-    quizCount.innerText = '1/6';
-    // functie voor tellen nog uitschrijven
-    
-    const questionList = document.createElement('div');
-    questionList.classList.add('quiz-question');
-    quizContainer.appendChild(questionList);
-
-    for (let question of questionContainer[0].question) {
-    questionList.innerText = questionContainer[0].question;
-    }
-    
     const answerList = document.createElement('ol');
     answerList.classList.add('quiz-answers');
     quizContainer.appendChild(answerList);
-    
-    for (let answer of questionContainer[0].answers) {
-        const quizAnswers = document.createElement("li");
+
+    // add the questions
+    quizQuestion.innerText = quizPages[currentQuestionIndex].question;
+
+    // create a loop to add all the answer elements
+    for (let answer of quizPages[currentQuestionIndex].answers) {
+        quizAnswers = document.createElement("li");
         answerList.appendChild(quizAnswers);
         quizAnswers.classList.add("quiz-answer");
-
-        const answerNumber = document.createElement("span");
-        quizAnswers.appendChild(answerNumber);
-        answerNumber.classList.add("answer-number");
-
         quizAnswers.innerText = answer;
     }
 
-    const bottomButtons = document.createElement('div');
-    bottomButtons.classList.add('bottom-buttons');
-    quizContainer.appendChild(bottomButtons);
+}
+
+// add prev and next button
+const bottomButtons = document.createElement('div');
+bottomButtons.classList.add('bottom-buttons');
+quizContainer.appendChild(bottomButtons);
+
+const prevButton = document.createElement('button');
+const nextButton = document.createElement('button');
+prevButton.classList.add('prev-button');
+nextButton.classList.add('next-button');
+bottomButtons.appendChild(prevButton);
+bottomButtons.appendChild(nextButton);
+prevButton.innerText = 'Vorige';
+nextButton.innerText = 'Volgende';
+
+// go to next page
+nextButton.addEventListener("click", nextQuizPage);
+prevButton.addEventListener("click", prevQuizPage);
+
+function nextQuizPage(event) {
+    currentQuestionIndex++;
+    // console.log(currentQuestionIndex);
+    quizQuestion.innerText = quizPages[currentQuestionIndex].question;
+    console.log(quizPages[currentQuestionIndex].answers);
+    for (let answer of quizPages[currentQuestionIndex].answers) {
+        quizAnswers.innerText = answer;
+        // uitzoeken waarom alleen laatste antwoordmogelijkheid verandert
+    }
+}
+
+function prevQuizPage() {
+    currentQuestionIndex--;
+    console.log(currentQuestionIndex);
+    console.log("prev");
+  }
+
+
+//     const bottomButtons = document.createElement('div');
+//     bottomButtons.classList.add('bottom-buttons');
+//     quizContainer.appendChild(bottomButtons);
     
-    const prevButton = document.createElement('button');
-    const nextButton = document.createElement('button');
-    prevButton.classList.add('prev-button');
-    nextButton.classList.add('next-button');
-    bottomButtons.appendChild(prevButton);
-    bottomButtons.appendChild(nextButton);
-    prevButton.innerText = 'Vorige';
-    nextButton.innerText = 'Volgende';
-}
+//     const prevButton = document.createElement('button');
+//     const nextButton = document.createElement('button');
+//     prevButton.classList.add('prev-button');
+//     nextButton.classList.add('next-button');
+//     bottomButtons.appendChild(prevButton);
+//     bottomButtons.appendChild(nextButton);
+//     prevButton.innerText = 'Vorige';
+//     nextButton.innerText = 'Volgende';
+// }
 
-function answerQuestion() {
+// function answerQuestion() {
 
-}
+// }
