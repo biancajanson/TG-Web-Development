@@ -112,22 +112,3 @@ function prevQuizPage() {
     console.log(currentQuestionIndex);
     console.log("prev");
   }
-
-
-//     const bottomButtons = document.createElement('div');
-//     bottomButtons.classList.add('bottom-buttons');
-//     quizContainer.appendChild(bottomButtons);
-    
-//     const prevButton = document.createElement('button');
-//     const nextButton = document.createElement('button');
-//     prevButton.classList.add('prev-button');
-//     nextButton.classList.add('next-button');
-//     bottomButtons.appendChild(prevButton);
-//     bottomButtons.appendChild(nextButton);
-//     prevButton.innerText = 'Vorige';
-//     nextButton.innerText = 'Volgende';
-// }
-
-// function answerQuestion() {
-
-// }
