@@ -140,7 +140,7 @@ quizContainer.appendChild(results);
 // go to other page
 nextButton.addEventListener("click", nextQuizPage);
 prevButton.addEventListener("click", prevQuizPage);
-submitButton.addEventListener("click", showResults);
+// submitButton.addEventListener("click", showResults);
 
 function nextQuizPage(e) {
     currentQuestionIndex++;
@@ -191,7 +191,7 @@ function prevQuizPage(e) {
         
     }
 
-    if (pageCounter < 1 ) 
+    if (pageCounter < 0 ) {
         pageCounter = 0;
     }
     quizCount.innerText = `${pageCounter+1}/${quizPages.length}`
