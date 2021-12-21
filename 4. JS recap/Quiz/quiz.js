@@ -105,13 +105,14 @@ const submitButton = document.createElement('button');
 submitButton.classList.add('submit-button');
 submitButton.classList.add('is-hidden');
 bottomButtons.appendChild(submitButton);
-submitButton.innerText = 'Controleer';
+submitButton.innerText = 'Uitslag';
 
 // add resultcontainer
 const results = document.createElement('div');
 results.classList.add('results');
 quizContainer.appendChild(results);
-// results.innerText = 'test';
+results.innerText = 'test';
+
 // const resultsContainer = document.getElementsByClassName('results');
 // // function good answer
 // function showResults() {
