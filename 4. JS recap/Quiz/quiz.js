@@ -98,7 +98,8 @@ prevButton.addEventListener("click", prevQuizPage);
 
 function nextQuizPage(e) {
     currentQuestionIndex++;
-    console.log(currentQuestionIndex); // deze verandert
+    console.log(currentQuestionIndex); 
+
     quizQuestion.innerText = quizPages[currentQuestionIndex].question;
     console.log(quizPages[currentQuestionIndex].answers); // hier zie ik ook de goede antwoorden
     for (let answer of quizPages[currentQuestionIndex].answers) { // maar hier verandert alleen het laatste antwoord, waaarom???
