@@ -103,7 +103,7 @@ p {
     gap: 10px;
 }
 
-.prev-button, .next-button {
+.prev-button, .next-button, .submit-button {
     font-family: 'Indie Flower', bold;
     background-color: rgb(36, 190, 196);
     border: none;
@@ -113,11 +113,18 @@ p {
     height: 30px;
     font-weight: bold;
     cursor: pointer;
-    display: flex;
     justify-content: center;
 }
 
-.prev-button:hover, .next-button:hover {
+.prev-button:hover, .next-button:hover, .submit-button:hover {
     background-color: rgb(85, 238, 243);
 }
 
+.results {
+    font-family: 'Indie Flower', bold;
+    position: relative;
+    top: 450px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}

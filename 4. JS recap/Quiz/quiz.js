@@ -101,6 +101,39 @@ bottomButtons.appendChild(prevButton);
 bottomButtons.appendChild(nextButton);
 prevButton.innerText = 'Vorige';
 nextButton.innerText = 'Volgende';
+const submitButton = document.createElement('button');
+submitButton.classList.add('submit-button');
+submitButton.classList.add('is-hidden');
+bottomButtons.appendChild(submitButton);
+submitButton.innerText = 'Submit';
+
+// add resultcontainer
+const results = document.createElement('div');
+results.classList.add('results');
+quizContainer.appendChild(results);
+// results.innerText = 'test';
+const resultsContainer = document.getElementsByClassName('results');
+// function good answer
+function showResults() {
+const answerContainers = quizPages.querySelectorAll('.quiz-answers');
+let numCorrect = 0;
+
+quizPages.forEach( (quizQuestion, pageCounter) => {
+    const answerContainer = answerContainers[pageCounter];
+    const selector = `input[name=question${pageCounter}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) ||  {}).value;
+
+    if(userAnswer === quizQuestion.correctAnswer) {
+        numCorrect++;
+        answerContainer[pageCounter].style.color = 'green';
+    }
+    else {
+        answerContainer[pageCounter].style.color = 'red';
+    }
+});
+
+resultsContainer.innerHTML = `Gefeliciteerd. Je hebt ${numCorrect} van de ${quizPages.length} goed!`
+}
 
 // go to other page
 nextButton.addEventListener("click", nextQuizPage);
@@ -125,9 +158,11 @@ function nextQuizPage(e) {
     if (quizPages.length > pageCounter){
         pageCounter++}
 
-    if (pageCounter > quizPages.length-1) {
-        pageCounter = quizPages.length-1
+    if (pageCounter === quizPages.length-1) {
+        nextButton.classList.add('is-hidden');
+        submitButton.classList.remove('is-hidden');
     }
+    
     quizCount.innerText = `${pageCounter+1}/${quizPages.length}`
 }
 
@@ -147,7 +182,11 @@ function prevQuizPage(e) {
         answersListChildNodes[i].innerText = quizPossibleAnswers[i];
     }
     if (quizPages.length > pageCounter) {
-        pageCounter--};
+        pageCounter--;
+        nextButton.classList.remove('is-hidden');
+        submitButton.classList.add('is-hidden');
+    }
+        ;
 
     if (pageCounter < 0 ) {
         pageCounter = 0
@@ -156,21 +195,4 @@ function prevQuizPage(e) {
     
 }
     
-// function good answer
-// function showResults() {
-//     quizPages.forEach( (quizQuestion, pageCounter) => {
-//         const answerContainer = answerContainers[pageCounter];
-//         const selector = `input[name=question${pageCounter}]:checked`;
-//         const userAnswer = (answerContainer.querySelector(selector) ||  {}).value;
 
-//         if(userAnswer === quizQuestion.correctAnswer) {
-//             numCorrect++;
-//             answerContainer[pageCounter].style.color = 'green';
-//         }
-//         else {
-//             answerContainer[pageCounter].style.color = 'red';
-//         }
-//     });
-
-//     resultsContainer.innerHTML = `Gefeliciteerd. Je hebt ${numCorrect} van de ${quizPages.length} goed!`
-// }
