@@ -113,29 +113,8 @@ results.classList.add('results');
 quizContainer.appendChild(results);
 results.innerText = 'test';
 
-// // function good answer
-// function showResults() {
-//     const answerContainers = container.querySelectorAll('.quiz-answers');
-//     let numCorrect = 0;
-
-//     quizPages.forEach( (currentQuestion, questionNumber) => {
-//         const answerContainer = answerContainers[questionNumber];
-//         const selector = `input[name=question${questionNumber}]:checked`;
-//         const userAnswer = (answerContainer.querySelector(selector) ||  {}).value;
-
-//         if(userAnswer === currentQuestion.correctAnswer) {
-//             numCorrect++;
-//             answerContainer[questionNumber].style.color = 'green';
-//         }
-//         else {
-//             answerContainer[questionNumber].style.color = 'red';
-//         }
-//     });
-
-// resultsContainer.innerHTML = `Gefeliciteerd. Je hebt ${numCorrect} van de ${quizPages.length} goed!`
-// }
-
 // function good answer
+
 
 // go to other page
 nextButton.addEventListener("click", nextQuizPage);
