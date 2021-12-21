@@ -98,12 +98,12 @@ prevButton.addEventListener("click", prevQuizPage);
 
 function nextQuizPage(e) {
     currentQuestionIndex++;
-    console.log('QUESTIONINDEX', currentQuestionIndex); 
+    // console.log('QUESTIONINDEX', currentQuestionIndex); 
 
     quizQuestion.innerText = quizPages[currentQuestionIndex].question;
-    console.log('QUIZQUESTION', quizQuestion);
+    // console.log('QUIZQUESTION', quizQuestion);
     const quizPossibleAnswers = quizPages[currentQuestionIndex].answers;
-    console.log(quizPossibleAnswers);
+    // console.log(quizPossibleAnswers);
 
     const answersList = document.querySelector('.quiz-answers');
     const answersListChildNodes = [...answersList.childNodes];
@@ -113,8 +113,22 @@ function nextQuizPage(e) {
     }
 }
 
-function prevQuizPage() {
+function prevQuizPage(e) {
     currentQuestionIndex--;
-    console.log(currentQuestionIndex);
-    console.log("prev");
-  }
+    console.log('QUESTIONINDEX', currentQuestionIndex);
+
+    quizQuestion.innerText = quizPages[currentQuestionIndex].question;
+    console.log('QUIZQUESTION', quizQuestion);
+    const quizPossibleAnswers = quizPages[currentQuestionIndex].answers;
+    console.log(quizPossibleAnswers);
+
+    const answersList = document.querySelector('.quiz-answers');
+    const answersListChildNodes = [...answersList.childNodes];
+
+    for (let i = quizPossibleAnswers.length - 1 ; i >= 0; i--) {
+        answersListChildNodes[i].innerText = quizPossibleAnswers[i];
+    }
+}
+    // console.log(currentQuestionIndex);
+    // console.log("prev");
+  
