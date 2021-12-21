@@ -113,7 +113,6 @@ results.classList.add('results');
 quizContainer.appendChild(results);
 results.innerText = 'test';
 
-// const resultsContainer = document.getElementsByClassName('results');
 // // function good answer
 // function showResults() {
 //     const answerContainers = container.querySelectorAll('.quiz-answers');
