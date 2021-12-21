@@ -115,12 +115,12 @@ function nextQuizPage(e) {
 
 function prevQuizPage(e) {
     currentQuestionIndex--;
-    console.log('QUESTIONINDEX', currentQuestionIndex);
+    // console.log('QUESTIONINDEX', currentQuestionIndex);
 
     quizQuestion.innerText = quizPages[currentQuestionIndex].question;
-    console.log('QUIZQUESTION', quizQuestion);
+    // console.log('QUIZQUESTION', quizQuestion);
     const quizPossibleAnswers = quizPages[currentQuestionIndex].answers;
-    console.log(quizPossibleAnswers);
+    // console.log(quizPossibleAnswers);
 
     const answersList = document.querySelector('.quiz-answers');
     const answersListChildNodes = [...answersList.childNodes];
@@ -129,6 +129,4 @@ function prevQuizPage(e) {
         answersListChildNodes[i].innerText = quizPossibleAnswers[i];
     }
 }
-    // console.log(currentQuestionIndex);
-    // console.log("prev");
-  
+    
