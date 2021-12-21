@@ -64,7 +64,7 @@ let quizPages = [
     }
 ];
 
-quizCount.innerText = pageCounter+1 + " / " + quizPages.length
+quizCount.innerText = `${pageCounter+1}/${quizPages.length}`
 
 
 function addQuizPage() {
@@ -128,7 +128,7 @@ function nextQuizPage(e) {
     if (pageCounter > quizPages.length-1) {
         pageCounter = quizPages.length-1
     }
-    quizCount.innerText = pageCounter+1 + " / " + quizPages.length
+    quizCount.innerText = `${pageCounter+1}/${quizPages.length}`
 }
 
 function prevQuizPage(e) {
@@ -152,7 +152,7 @@ function prevQuizPage(e) {
     if (pageCounter < 0 ) {
         pageCounter = 0
     }
-    quizCount.innerText = pageCounter+1 + " / " + quizPages.length
+    quizCount.innerText = `${pageCounter+1}/${quizPages.length}`
     
 }
     
