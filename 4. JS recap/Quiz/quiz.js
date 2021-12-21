@@ -143,12 +143,10 @@ function prevQuizPage(e) {
     if (quizPages.length > pageCounter) {
         pageCounter--};
 
-    if (pageCounter < quizPages[0]) {
-        pageCounter = quizPages[1]
+    if (pageCounter < 0 ) {
+        pageCounter = 0
     }
     quizCount.innerText = pageCounter+1 + " / " + quizPages.length
-    // if (pageCounter < 0 ) {
-    //     pageCounter = 0
-    // }
+    
 }
     
