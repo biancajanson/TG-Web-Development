@@ -6,6 +6,7 @@ quizContainer.classList.add('is-hidden');
 let currentQuestionIndex;
 let quizQuestion;
 let quizAnswers;
+let pageCounter = 0;
 
 // add start button
 const startButton = document.createElement('button');
@@ -31,7 +32,7 @@ quizTitle.innerText = 'Math Problem';
 let quizCount = document.createElement('div');
 quizCount.classList.add('quiz-count');
 quizContainer.appendChild(quizCount);
-quizCount.innerText = '1/6';
+
 // functie voor tellen nog uitschrijven
 
 // create six quiz pages with a question and answers
@@ -56,6 +57,9 @@ let quizPages = [
         answers: [102, 37, 44, 67, 50],
     }
 ];
+
+quizCount.innerText = pageCounter+1 + " / " + quizPages.length
+
 
 function addQuizPage() {
     // add elements for the quiz pages
@@ -111,6 +115,14 @@ function nextQuizPage(e) {
     for (let i = 0; i < quizPossibleAnswers.length; i++) {
         answersListChildNodes[i].innerText = quizPossibleAnswers[i];
     }
+
+    if (quizPages.length > pageCounter){
+        pageCounter++}
+
+    if (pageCounter > quizPages.length-1) {
+        pageCounter = quizPages.length-1
+    }
+    quizCount.innerText = pageCounter+1 + " / " + quizPages.length
 }
 
 function prevQuizPage(e) {
@@ -128,5 +140,15 @@ function prevQuizPage(e) {
     for (let i = quizPossibleAnswers.length - 1 ; i >= 0; i--) {
         answersListChildNodes[i].innerText = quizPossibleAnswers[i];
     }
+    if (quizPages.length > pageCounter) {
+        pageCounter--};
+
+    if (pageCounter < quizPages[0]) {
+        pageCounter = quizPages[1]
+    }
+    quizCount.innerText = pageCounter+1 + " / " + quizPages.length
+    // if (pageCounter < 0 ) {
+    //     pageCounter = 0
+    // }
 }
     
