@@ -156,3 +156,21 @@ function prevQuizPage(e) {
     
 }
     
+// function good answer
+// function showResults() {
+//     quizPages.forEach( (quizQuestion, pageCounter) => {
+//         const answerContainer = answerContainers[pageCounter];
+//         const selector = `input[name=question${pageCounter}]:checked`;
+//         const userAnswer = (answerContainer.querySelector(selector) ||  {}).value;
+
+//         if(userAnswer === quizQuestion.correctAnswer) {
+//             numCorrect++;
+//             answerContainer[pageCounter].style.color = 'green';
+//         }
+//         else {
+//             answerContainer[pageCounter].style.color = 'red';
+//         }
+//     });
+
+//     resultsContainer.innerHTML = `Gefeliciteerd. Je hebt ${numCorrect} van de ${quizPages.length} goed!`
+// }
