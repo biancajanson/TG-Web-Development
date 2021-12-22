@@ -114,7 +114,9 @@ quizContainer.appendChild(results);
 results.innerText = 'test';
 
 // function good answer
+function goodAnswer(e) {
 
+}
 
 // go to other page
 nextButton.addEventListener("click", nextQuizPage);
