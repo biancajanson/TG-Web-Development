@@ -114,7 +114,7 @@ submitButton.innerText = 'Uitslag';
 const results = document.createElement('div');
 results.classList.add('results');
 quizContainer.appendChild(results);
-results.innerText = 'test';
+// results.innerText = 'test';
 
 // function get result
 
