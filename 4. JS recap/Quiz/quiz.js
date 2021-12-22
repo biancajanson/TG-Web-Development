@@ -39,30 +39,31 @@ quizContainer.appendChild(quizCount);
 let quizPages = [
     {
         question: "what is 24 + 42",
-        answers: [45, 66, 82, 69, 68],
-        correctAnswer: 66,
+        answers: ["45", "66", "83", "69", "68"],
+        correctAnswer: 1,
     }, {
         question: "what is 5 * 4",
-        answers: [9, 30, 20, 40, 1],
-        correctAnswer: 20,
+        answers: ["9", "30", "20", "40", "1"],
+        correctAnswer: 2,
     }, {
         question: "what is 25 - 11",
-        answers: [14, 12, 15, 10, 13],
-        correctAnswer: 14,
+        answers: ["14", "12", "15", "10", "13"],
+        correctAnswer: 0,
     }, {
         question: "what is 25 / 5",
-        answers: [5, 20, 30, 125, 10],
-        correctAnswer: 5,
+        answers: ["5", "20", "30", "125", "10"],
+        correctAnswer: 0,
     }, {
         question: "what is 1/2 of 6",
-        answers: [2, 1, 9, 12, 3],
-        correctAnswer: 3,
+        answers: ["2", "1", "9", "12", "3"],
+        correctAnswer: 4,
     }, {
         question: "what is 56 + 11",
-        answers: [102, 37, 44, 67, 50],
-        correctAnswer: 67,
+        answers: ["102", "37", "44", "67", "50"],
+        correctAnswer: 3,
     }
 ];
+
 
 quizCount.innerText = `${pageCounter+1}/${quizPages.length}`
 
