@@ -7,6 +7,7 @@ let currentQuestionIndex;
 let quizQuestion;
 let quizAnswers;
 let pageCounter = 0;
+let numberOfCorrectAnswers = 0;
 
 // add start button
 const startButton = document.createElement('button');
@@ -87,6 +88,7 @@ function addQuizPage() {
         answerList.appendChild(quizAnswers);
         quizAnswers.classList.add("quiz-answer");
         quizAnswers.innerText = answer;
+        // quizAnswers.setAttribute("click",getResult());
     }
 }
 
@@ -114,10 +116,9 @@ results.classList.add('results');
 quizContainer.appendChild(results);
 results.innerText = 'test';
 
-// function good answer
-function goodAnswer(e) {
+// function get result
 
-}
+
 
 // go to other page
 nextButton.addEventListener("click", nextQuizPage);
@@ -180,4 +181,3 @@ function prevQuizPage(e) {
     
 }
     
-

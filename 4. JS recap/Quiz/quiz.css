@@ -128,3 +128,11 @@ p {
     font-weight: bold;
     text-align: center;
 }
+
+.correct {
+    background-color: chartreuse;
+}
+
+.wrong {
+    background-color: crimson;
+}
