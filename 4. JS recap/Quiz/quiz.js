@@ -88,7 +88,7 @@ function addQuizPage() {
         answerList.appendChild(quizAnswers);
         quizAnswers.classList.add("quiz-answer");
         quizAnswers.innerText = answer;
-        quizAnswers.setAttribute("click",getResult());
+        // quizAnswers.setAttribute("click",getResult());
     }
 }
 
@@ -117,11 +117,11 @@ quizContainer.appendChild(results);
 // results.innerText = 'test';
 
 // function get result
-function getResult() {
-    if (quizQuestion[currentQuestionIndex].answer === quizQuestion[currentQuestionIndex].correctAnswer) {
-        quizQuestion[currentQuestionIndex].answer.classList.add("correct");
-    }
-}
+// function getResult() {
+//     if (quizQuestion[currentQuestionIndex].answer === quizQuestion[currentQuestionIndex].correctAnswer) {
+//         quizQuestion[currentQuestionIndex].answer.classList.add("correct");
+//     }
+// }
 
 
 // go to other page
