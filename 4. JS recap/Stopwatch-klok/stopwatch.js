@@ -46,7 +46,6 @@ window.onload = function () {
         } 
       
         if (tens > 99) {
-            console.log("seconds");
             seconds++;
             appendSeconds.innerHTML = "0" + seconds;
             tens = 0;
@@ -58,11 +57,10 @@ window.onload = function () {
         }
 
         if (seconds > 59) {
-            console.log("minutes");
             minutes++;
-            appendTens.innerHTML = "0" + tens;
             seconds = 0;
-            appendSeconds.innerHTML = "0" + 0;
+            appendSeconds.innerHTML = "0" + seconds;
+            appendMinutes.innerHTML = "0" + minutes;
         }
     
         
