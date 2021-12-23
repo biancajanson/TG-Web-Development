@@ -35,7 +35,8 @@ span {
   top: 100px;
   width: 600px;
   height: 600px;
-  background-color: #f76df7;
+  background-color: #fca1fc;
+  opacity: 0.9;
   border-radius: 50%;
   margin-left: 20%;
   -webkit-box-shadow: 0px 0px 10px 10px #81158f;
@@ -47,7 +48,7 @@ span {
 }
 
 button {
-  background: #f76df7;
+  background: #fca1fc;
   color: #fff;
   border: solid 1px #fff;
   text-decoration: none;
@@ -62,6 +63,6 @@ button {
 button:hover {
   background: #fff;
   border: solid 1px #fff;
-  color: #f76df7;
+  color: #fca1fc;
 }
 /*# sourceMappingURL=stopwatch.css.map */
