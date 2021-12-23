@@ -1,0 +1,51 @@
+/* Variabes */  
+$orange: #ffa600;
+$grey:#f3f3f3;
+$white: #fff;
+$base-color:$orange ;
+
+
+body {
+background:$base-color;
+font-family: 'Courier New', Courier, monospace;
+height:100%;
+}
+
+.wrapper {
+    top: 300px;
+    width: 800px;
+    margin: 30px auto;
+    color:$white;
+    text-align:center;
+}
+
+
+#minutes, #seconds, #tens {
+  font-size:2em;
+}
+
+button{
+background:$base-color;
+color:$white;
+border: solid 1px $white;
+text-decoration:none;
+cursor:pointer;
+font-size:1.2em;
+padding:18px 10px;
+width:180px;
+margin: 10px;
+ outline: none;
+  &:hover{
+	
+	background:$white;
+	border: solid 1px $white;
+	color:$base-color;
+	}
+}
+
+
+
+
+
+
+
