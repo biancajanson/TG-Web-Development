@@ -35,12 +35,12 @@ span {
   top: 100px;
   width: 600px;
   height: 600px;
-  background-color: #fca1fc;
+  background-color: #a7a1fc;
   opacity: 0.9;
   border-radius: 50%;
   margin-left: 20%;
-  -webkit-box-shadow: 0px 0px 10px 10px #81158f;
-          box-shadow: 0px 0px 10px 10px #81158f;
+  -webkit-box-shadow: 0px 0px 10px 10px #0d0b8d;
+          box-shadow: 0px 0px 10px 10px #0d0b8d;
 }
 
 #minutes, #seconds, #tens, .doublepoint {
@@ -48,7 +48,7 @@ span {
 }
 
 button {
-  background: #fca1fc;
+  background: #a7a1fc;
   color: #fff;
   border: solid 1px #fff;
   text-decoration: none;
@@ -63,6 +63,6 @@ button {
 button:hover {
   background: #fff;
   border: solid 1px #fff;
-  color: #fca1fc;
+  color: #a7a1fc;
 }
 /*# sourceMappingURL=stopwatch.css.map */
