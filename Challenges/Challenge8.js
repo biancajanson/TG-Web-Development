@@ -8,7 +8,7 @@ vCardForm = document.getElementById('vCardForm');
 let textInput = document.getElementsByClassName('textInput');
 for(let i = 0; i < textInput.length; i++) {
     textInput[i].addEventListener('blur', () => {
-        if(textInput[i].value.length < 5) {
+        if(textInput[i].value.length < 2) {
             textInput[i].placeholder = 'please enter your ' + textInput[i].id;
             textInput[i].classList.add('emptyInput');
             textInput[i].focus();
@@ -50,15 +50,37 @@ function fillvCard(event) {
     let adress = street + ', ' + zipCode + ', ' + city;
     let email = vCardForm.email.value;
     let userID = 'ID: person | ' + Math.random() * 10;
+    let genders = [];
+    let myGender = '';
+    genders = document.getElementsByName('gender');
+    for(let i =0; i < genders.length; i++) {
+        if(genders[i].checked) {
 
+            myGender = genders[i].value;
+        };
+    }
+    console.log(myGender);
+    let newPhone = '';
+    phone.toString();
+    if(phone.charAt(1) === '6') {
+        startNumber = phone.charAt(0);
+        console.log(startNumber);
+        newPhone = phone.replace(startNumber,'(+31)');
+        console.log(newPhone);
+    }
+    else {
+        newPhone = phone;
+    }
+    
+    let image = document.createElement('img');
     let vCardFields = [];
-    vCardFields.push('Naam: ' + myName,'Telefoonnummer: ' + phone,'Straat: ' + adress,'E-mail: ' + email,userID)
+    vCardFields.push('Naam: ' + myName,'Telefoonnummer: ' + newPhone,'Straat: ' + adress,'E-mail: ' + email,userID)
     let fields = [];
     let field;
     let vCardField = document.createElement('div');
 
     for(let i = 0; i < textInput.length; i++) {
-        if(textInput[i] < 5) {
+        if(textInput[i] < 2) {
         textInput[i].classList.add('emptyInput');
         textInput[i].focus();
         }
@@ -70,9 +92,12 @@ function fillvCard(event) {
         checkEmail();
     }
     else {
+        image.src = myGender + '.jpg';
+        vCard.appendChild(image);
         vCard.appendChild(vCardField);
+        vCard.classList.add(myGender);
         vCardField.classList.add('vCardField');
-        console.log(vCardFields)
+        
         for(let i = 0; i < vCardFields.length; i++) {
             let vCardTemplate = `<span class="cardLine">${vCardFields[i]}</span>`;
             field = vCardTemplate;
@@ -80,13 +105,13 @@ function fillvCard(event) {
     
             vCardField.innerHTML = fields;
         }
-        fillCard.style.display = 'none';
+        fillCard.style.opacity = 0;
     }
 }
 function clearForm() {
     let allInput = document.getElementsByTagName('input');
     for(let i = 0; i < allInput.length; i++) {
         allInput[i].value = '';
-        fillCard.style.display = 'block';
+        fillCard.style.opacity = 1;
     }
 }
