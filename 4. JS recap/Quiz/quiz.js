@@ -121,17 +121,26 @@ function selectAnswer(e) {
     const selectedAnswer = e.target.innerText;
     console.log(selectedAnswer); 
     const correctAnswer = quizPages[currentQuestionIndex].correctAnswer;
-    if (selectedAnswer == correctAnswer) {
-        console.log('CORRECT');
-        numberOfCorrectAnswers++;
-        console.log(numberOfCorrectAnswers);
-        selectedAnswer.style.backgroundColor = 'green';
+    const quiz = document.querySelectorAll(".quiz-answer")
+    quiz.forEach((q) => {
+        console.log(eval(q.innerHTML))
+        if(eval(q.innerHTML) == correctAnswer) {
+            //
+        }
+    })
+    // if (selectedAnswer == correctAnswer) {
+    //     console.log('CORRECT');
+    //     numberOfCorrectAnswers++;
+    //     console.log(numberOfCorrectAnswers);
+    //     selectedAnswer.style.backgroundColor = 'green';
        
-    } else {
-        console.log("WRONG");
-        selectedAnswer.classList.add('wrong');
-        correctAnswer.classList.add('correct');
-    }
+    // } else {
+    //     console.log("WRONG");
+    //     selectedAnswer.style.backgroundColor = 'red';
+    //     correctAnswer.style.backgroundColor = 'green';
+    //     // selectedAnswer.classList.add('wrong');
+    //     // correctAnswer.classList.add('correct');
+    // }
 }
 
 
