@@ -125,10 +125,11 @@ function selectAnswer(e) {
         console.log('CORRECT');
         numberOfCorrectAnswers++;
         console.log(numberOfCorrectAnswers);
-        selectedAnswer.classList.add("correct");
+        selectedAnswer.classList.add('correct');
     } else {
         console.log("WRONG");
         selectedAnswer.classList.add('wrong');
+        correctAnswer.classList.add('correct');
     }
 }
 
