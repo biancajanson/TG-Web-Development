@@ -65,7 +65,6 @@ let quizPages = [
     }
 ];
 
-
 quizCount.innerText = `${pageCounter+1}/${quizPages.length}`
 
 
@@ -117,11 +116,8 @@ quizContainer.appendChild(results);
 // results.innerText = 'test';
 
 // function get result
-// function getResult() {
-//     if (quizQuestion[currentQuestionIndex].answer === quizQuestion[currentQuestionIndex].correctAnswer) {
-//         quizQuestion[currentQuestionIndex].answer.classList.add("correct");
-//     }
-// }
+function getResult() {
+}
 
 
 // go to other page
