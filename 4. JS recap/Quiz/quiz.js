@@ -35,8 +35,6 @@ let quizCount = document.createElement('div');
 quizCount.classList.add('quiz-count');
 quizContainer.appendChild(quizCount);
 
-// functie voor tellen nog uitschrijven
-
 // create six quiz pages with a question and answers
 let quizPages = [
     {
@@ -65,7 +63,7 @@ let quizPages = [
         correctAnswer: 67,
     }
 ];
-console.log(quizPages)
+// console.log(quizPages)
 
 quizCount.innerText = `${pageCounter+1}/${quizPages.length}`
 
@@ -89,7 +87,7 @@ function addQuizPage() {
         answerList.appendChild(quizAnswers);
         quizAnswers.classList.add("quiz-answer");
         quizAnswers.innerText = answer;
-        // quizAnswers.setAttribute("click",getResult());
+        quizAnswers.addEventListener("click", selectAnswer);
     }
 }
 
@@ -118,7 +116,21 @@ results.classList.add('results');
 quizContainer.appendChild(results);
 // results.innerText = 'test';
 
-// function get result
+// good or wrong answer
+function selectAnswer(e) {
+    const selectedAnswer = e.target.innerText;
+    console.log(selectedAnswer); 
+    const correctAnswer = quizPages[currentQuestionIndex].correctAnswer;
+    if (selectedAnswer == correctAnswer) {
+        console.log('CORRECT');
+        numberOfCorrectAnswers++;
+        console.log(numberOfCorrectAnswers);
+        selectedAnswer.classList.add("correct");
+    } else {
+        console.log("WRONG");
+        selectedAnswer.classList.add('wrong');
+    }
+}
 
 
 // go to other page
