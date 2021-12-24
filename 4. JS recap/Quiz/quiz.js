@@ -125,7 +125,8 @@ function selectAnswer(e) {
         console.log('CORRECT');
         numberOfCorrectAnswers++;
         console.log(numberOfCorrectAnswers);
-        selectedAnswer.classList.add('correct');
+        selectedAnswer.style.backgroundColor = 'green';
+       
     } else {
         console.log("WRONG");
         selectedAnswer.classList.add('wrong');
