@@ -18,6 +18,7 @@ startButton.innerText = 'Start';
 // starting the quiz
 startButton.addEventListener("click", startQuiz)
 
+
 function startQuiz() {
     startButton.classList.add('is-hidden');
     quizContainer.classList.remove("is-hidden");
@@ -109,6 +110,7 @@ submitButton.classList.add('is-hidden');
 bottomButtons.appendChild(submitButton);
 submitButton.innerText = 'Uitslag';
 
+
 // add resultcontainer
 const results = document.createElement('div');
 results.classList.add('results');
@@ -116,8 +118,6 @@ quizContainer.appendChild(results);
 // results.innerText = 'test';
 
 // function get result
-function getResult() {
-}
 
 
 // go to other page
