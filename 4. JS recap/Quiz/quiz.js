@@ -125,7 +125,7 @@ function selectAnswer(e) {
     quiz.forEach((q) => {
         console.log(eval(q.innerHTML))
         if(eval(q.innerHTML) == correctAnswer) {
-            
+            // quiz.classList.add('correct');
         }
     })
     // if (selectedAnswer == correctAnswer) {
