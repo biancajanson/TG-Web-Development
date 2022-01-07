@@ -111,10 +111,12 @@ submitButton.innerText = 'Uitslag';
 
 
 // add resultcontainer
-const results = document.createElement('div');
-results.classList.add('results');
-quizContainer.appendChild(results);
-// results.innerText = 'test';
+function showResults() {
+    const results = document.createElement('div');
+    results.classList.add('results');
+    quizContainer.appendChild(results);
+    results.innerText = `Gefeliciteerd, je hebt ${numberOfCorrectAnswers} van de ${quizPages.length} vragen goed!`;
+}
 
 // good or wrong answer
 function selectAnswer(e) {
@@ -127,7 +129,7 @@ function selectAnswer(e) {
         if(eval(q.innerHTML) == correctAnswer) {
             
         } else {
-            
+
         }
     })
     // if (selectedAnswer == correctAnswer) {
