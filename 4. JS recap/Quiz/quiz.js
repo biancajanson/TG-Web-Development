@@ -126,12 +126,19 @@ function selectAnswer(e) {
     const quiz = document.querySelectorAll(".quiz-answer")
     quiz.forEach((q) => {
         console.log(eval(q.innerHTML))
-        if(eval(q.innerHTML) == correctAnswer) {
-            numberOfCorrectAnswers++;
-            console.log('aantal goed:', numberOfCorrectAnswers)
+        if(eval(q.innerHTML) !== correctAnswer) {
+            console.log('wrong');
+            return;
         } else {
-
+            numberOfCorrectAnswers++
+            console.log('aantal goed:', numberOfCorrectAnswers)
         }
+        // if(eval(q.innerHTML) == correctAnswer) {
+        //     numberOfCorrectAnswers++;
+        //     console.log('aantal goed:', numberOfCorrectAnswers)
+        // } else {
+
+        // }
     })
     // if (selectedAnswer == correctAnswer) {
     //     console.log('CORRECT');
