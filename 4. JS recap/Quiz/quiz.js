@@ -119,7 +119,7 @@ quizContainer.appendChild(results);
 // good or wrong answer
 function selectAnswer(e) {
     const selectedAnswer = e.target.innerText;
-    console.log(selectedAnswer); 
+    console.log('given answer:', selectedAnswer); 
     const correctAnswer = quizPages[currentQuestionIndex].correctAnswer;
     const quiz = document.querySelectorAll(".quiz-answer")
     quiz.forEach((q) => {
