@@ -127,7 +127,8 @@ function selectAnswer(e) {
     quiz.forEach((q) => {
         console.log(eval(q.innerHTML))
         if(eval(q.innerHTML) == correctAnswer) {
-            
+            numberOfCorrectAnswers++;
+            console.log('aantal goed:', numberOfCorrectAnswers)
         } else {
 
         }
@@ -147,6 +148,21 @@ function selectAnswer(e) {
     // }
 }
 
+// function selectAnswer(e) {
+//     const selectedAnswer = e.target.innerText;
+//     console.log('given answer:', selectedAnswer); 
+//     const correctAnswer = quizPages[currentQuestionIndex].correctAnswer;
+//     const quiz = document.querySelectorAll(".quiz-answer")
+//     if(selectedAnswer == correctAnswer) {
+//         console.log('correct')
+//         numberOfCorrectAnswers++;
+//         console.log('aantal goed:', numberOfCorrectAnswers);
+        
+//     } else {
+//         console.log('wrong')
+//     }
+
+// }
 
 // go to other page
 nextButton.addEventListener("click", nextQuizPage);
