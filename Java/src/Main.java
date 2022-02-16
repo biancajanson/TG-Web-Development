@@ -72,6 +72,7 @@ public class Main {
     int modelYear;
     String modelName;
 
+    // constructor
     public Main(int year, String name) {
         modelYear = year;
         modelName = name;
