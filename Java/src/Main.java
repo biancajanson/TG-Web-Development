@@ -4,10 +4,11 @@ public class Main {
         System.out.println("Hello World");
     }*/
 
+    /*
     int x = 5;
     int y = 3;
 
-    /* public static void main(String[] args) {
+    public static void main(String[] args) {
         Main myObj1 = new Main();
         Main myObj2 = new Main();
         System.out.println(myObj1.x);
@@ -17,4 +18,17 @@ public class Main {
     // Single line comment
     /* Multi line
     comment */
+
+    /*
+    int x;
+
+    public static void main(String[] args) {
+        Main myObj = new Main();
+        myObj.x = 40;
+        System.out.println(myObj.x);
+
+
+    } */
+
+    
 }
