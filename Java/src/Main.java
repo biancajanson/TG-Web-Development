@@ -29,6 +29,56 @@ public class Main {
 
 
     } */
+    /*
+    int x = 10;
 
-    
+    public static void main(String[] args) {
+        Main myObj = new Main();
+        myObj.x = 25;
+        System.out.println(myObj.x);
+    } */
+
+    /*
+    final int x = 10;
+
+    public static void main(String[] args) {
+        Main myObj = new Main();
+        myObj.x = 25; //error, omdat int als final gedeclareerd staat
+        System.out.println(myObj.x);
+    } */
+    /*
+    String fname = "John";
+    String lname = "Doe";
+    int age = 24;
+
+    public static void main(String[] args) {
+        Main myObj = new Main();
+        System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+        System.out.println("Age: " + myObj.age);
+    }
+*/
+    /*
+    static void myMethod() {
+        System.out.println("I just got executed!");
+    }
+
+    public static void main(String[] args) {
+        myMethod();
+        myMethod();
+        myMethod();
+    }
+    */
+
+    int modelYear;
+    String modelName;
+
+    public Main(int year, String name) {
+        modelYear = year;
+        modelName = name;
+    }
+
+    public static void main(String[] args) {
+        Main myCar = new Main(1969, "Mustang");
+        System.out.println(myCar.modelYear + " " + myCar.modelName);
+    }
 }
