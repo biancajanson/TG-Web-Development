@@ -6,9 +6,16 @@ public class Opdracht7 {
         String[] cars = {"Kia", "Volkswagen", "Renault", "Honda", "BMW"};
         ArrayList<String> westcars = new ArrayList<>();
 
-        // Opdracht a
+        // Opdracht A
         for (int i = 0; i < 3; i++) {
-            System.out.println(cars[i]);
+            System.out.println("Opdracht A: " + cars[i]);
         }
+
+        // Opdracht B
+        for(String car : cars) {
+            System.out.println("Opdracht B: "+ car);
+        }
+
+        // Opdracht C
     }
 }
