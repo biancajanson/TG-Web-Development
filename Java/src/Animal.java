@@ -16,4 +16,9 @@ public class Animal {
         this.animalAge = age;
         System.out.println("The name of this animal is " + name + " and he/she is " + age + " years old.");
     }
+
+    public static void main(String[] args){
+
+    }
+
 }
