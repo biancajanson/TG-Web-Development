@@ -90,5 +90,15 @@ public class Main {
         String[][] cars = {{"Kia", "Honda"}, {"BMW", "Renault", "Volkswagen"}};
         System.out.println(cars[1][0]);
     } */
-    
+
+    //ArrayList, bovenin je bestand importeer je de code van de ArrayList uit de java.util package
+    public static void main(String[] args) {
+        ArrayList<String> cars = new ArrayList<>();
+        cars.add("Kia");
+        cars.add("Honda");
+        cars.add("BMW");
+        cars.add("Renault");
+        cars.add("Volkswagen");
+        System.out.println(cars);
+    }
 }
