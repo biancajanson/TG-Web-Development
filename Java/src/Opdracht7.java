@@ -31,5 +31,12 @@ public class Opdracht7 {
         System.out.println("The items in westcars: "+ westcars);
 
         // Opdracht D
+        Arrays.sort(eastcars);
+        Arrays.sort(cars);
+        Collections.sort(westcars);
+
+        System.out.println("Alphabetic Eastcars: " + Arrays.toString(eastcars));
+        System.out.println("Alphabetic Cars: " + Arrays.toString(cars));
+        System.out.println("Alphabetic Westcars: " + (westcars));
     }
 }
