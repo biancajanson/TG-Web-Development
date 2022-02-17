@@ -12,7 +12,7 @@ public class Bear extends Animal {
         System.out.println("Type from Bear class: " + this.type);
         System.out.println("Type from Animal class: " + Animal.type);
     }
-    
+
     public static void main(String[] args) {
         Bear brownBear = new Bear("Pooh", 25, "Brown Bear");
         Bear polarBear = new Bear("Lars", 18, "Polar Bear");

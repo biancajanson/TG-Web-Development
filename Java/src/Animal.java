@@ -4,11 +4,11 @@ public class Animal {
     static String type = "Animal";
 
     public void feed() {
-
+        System.out.println("Feed this animal...");
     }
 
     public void visitVet() {
-
+        System.out.println("This animal must see the vet...");
     }
 
     public Animal(String name, int age) {
