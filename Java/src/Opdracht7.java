@@ -1,9 +1,11 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Opdracht7 {
     public static void main(String[] args) {
-        String[] eastcars = {"Kia", "Honda"};
-        String[] cars = {"Kia", "Volkswagen", "Renault", "Honda", "BMW"};
+        String[] eastcars = new String[]{"Kia", "Honda"};
+        String[] cars = new String[]{"Kia", "Volkswagen", "Renault", "Honda", "BMW"};
         ArrayList<String> westcars = new ArrayList<>();
 
         // Opdracht A
@@ -12,10 +14,22 @@ public class Opdracht7 {
         }
 
         // Opdracht B
-        for(String car : cars) {
+        for (String car : cars) {
             System.out.println("Opdracht B: "+ car);
         }
 
         // Opdracht C
+        int i;
+        String car;
+
+        for (i = 0; i < cars.length; i++) {
+            car = cars[i];
+            if (!Arrays.toString(eastcars).contains(car)) {
+                westcars.add(car);
+            }
+        }
+        System.out.println("The items in westcars: "+ westcars);
+
+        // Opdracht D
     }
 }
