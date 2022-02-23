@@ -17,6 +17,10 @@ public class FloatDouble {
         System.out.println("MyIntvalue = " + myIntValue);
         System.out.println("MyFloatValue = " + myFloatValue);
         System.out.println("MyDoubleValue = " + myDoubleValue);
+
+        // double gaat sneller op computers dan float
+        // double gebruiken, geen float
+
     }
 
 }
