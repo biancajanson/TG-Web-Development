@@ -21,6 +21,10 @@ public class FloatDouble {
         // double gaat sneller op computers dan float
         // double gebruiken, geen float
 
+        // challenge, pounds to kilograms converteren
+        double numberOfPounds = 200d;
+        double convertedKilograms = numberOfPounds * 0.45359237;
+        System.out.println(numberOfPounds + " pound is omgerekend " + convertedKilograms + " kilo");
     }
 
 }
